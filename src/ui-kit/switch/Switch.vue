@@ -2,14 +2,10 @@
   <label
     :for="id + '_button'"
     :class="{ active: isActive }"
-    class="toggle__button"
+    class="flex flex-row items-center toggle__button"
   >
-    <span v-if="isActive" class="toggle__label text-purple-50">{{
-      enableText
-    }}</span>
-    <span v-if="!isActive" class="toggle__label text-purple-50">{{
-      disabledText
-    }}</span>
+    <sun-icon v-if="isActive" class="toggle__label h-5 w-5 text-yellow-200" />
+    <moon-icon v-else class="toggle__label h-5 w-5 text-gray-500" />
 
     <input
       type="checkbox"
@@ -22,13 +18,16 @@
 </template>
 
 <script>
+import { SunIcon } from "@heroicons/vue/solid";
+import { MoonIcon } from "@heroicons/vue/solid";
 export default {
   name: "Switch",
-  components: {},
+  components: {
+    SunIcon,
+    MoonIcon,
+  },
   props: {
     id: String,
-    enableText: String,
-    disabledText: String,
     disabled: Boolean,
   },
   data() {
