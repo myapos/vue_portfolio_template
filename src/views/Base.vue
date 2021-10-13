@@ -1,21 +1,19 @@
 <template>
   <app-header />
-  <div>
-    <app-about />
-  </div>
-  <app-footer />
+  <!-- <app-about />
+  <app-footer /> -->
 </template>
 
 <script>
-import AppFooter from "../components/Footer.vue";
 import AppHeader from "../components/Header.vue";
-import AppAbout from "../components/About.vue";
+// import AppFooter from "../components/Footer.vue";
+// import AppAbout from "../components/About.vue";
 export default {
   name: "Base",
   components: {
-    AppFooter,
     AppHeader,
-    AppAbout,
+    // AppFooter,
+    // AppAbout,
   },
   props: {},
 };
