@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gray-800 p-4">
+  <div class="bg-gray-800 p-4 flex flex-wrap justify-between">
     <app-link
       v-for="item in items"
       :key="item"
@@ -7,7 +7,7 @@
       :description="item.description"
     />
     <app-switch id="header" :disabled="false" />
-  </nav>
+  </div>
 </template>
 
 <script>
