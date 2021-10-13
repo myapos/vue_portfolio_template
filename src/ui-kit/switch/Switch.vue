@@ -4,8 +4,12 @@
     :class="{ active: isActive }"
     class="toggle__button"
   >
-    <span v-if="isActive" class="toggle__label">{{ enableText }}</span>
-    <span v-if="!isActive" class="toggle__label">{{ disabledText }}</span>
+    <span v-if="isActive" class="toggle__label text-purple-50">{{
+      enableText
+    }}</span>
+    <span v-if="!isActive" class="toggle__label text-purple-50">{{
+      disabledText
+    }}</span>
 
     <input
       type="checkbox"
@@ -21,10 +25,15 @@
 export default {
   name: "Switch",
   components: {},
-  props: { id: String },
+  props: {
+    id: String,
+    enableText: String,
+    disabledText: String,
+    disabled: Boolean,
+  },
   data() {
     return {
-      currentState: false,
+      currentState: this.disabled,
     };
   },
   computed: {

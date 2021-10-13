@@ -6,7 +6,12 @@
       :target="item.target"
       :description="item.description"
     />
-    <app-switch id="header" :disabled="false" />
+    <app-switch
+      id="header"
+      :disabled="false"
+      enableText="Dark Mode"
+      disabledText="Light Mode"
+    />
   </div>
 </template>
 
