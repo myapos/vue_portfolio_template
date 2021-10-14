@@ -5,7 +5,7 @@
 
 <script>
 import AppMenu from "./Menu.vue";
-import AppMobileMenu from "./MobileMenu.vue";
+import AppMobileMenu from "./mobileMenu/MobileMenu.vue";
 
 export default {
   name: "Header",
