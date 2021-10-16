@@ -1,5 +1,5 @@
 <template>
-  <app-mobile-menu v-if="showMobileMenu" />
+  <app-mobile-menu v-if="showMobileMenu" :width="width" />
   <app-menu v-if="!showMobileMenu" />
 </template>
 
@@ -16,14 +16,15 @@ export default {
   props: {},
   data() {
     return {
-      width: this.getScreenWidth(),
+      width: screen.width,
       mdBreakpoint: 768,
     };
   },
   mounted() {
-    window.addEventListener("resize", () => {
-      this.width = this.getScreenWidth();
-    });
+    window.addEventListener("resize", this.handleResize);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.handleResize);
   },
   computed: {
     showMobileMenu: function () {
@@ -33,12 +34,8 @@ export default {
     },
   },
   methods: {
-    getScreenWidth() {
-      const screenWidth =
-        window.innerWidth ||
-        document.documentElement.clientWidth ||
-        document.body.clientWidth;
-      return screenWidth;
+    handleResize() {
+      this.width = screen.width;
     },
   },
 };

@@ -12,6 +12,7 @@
       :disabled="disabled"
       :id="id + '_button'"
       v-model="checkedValue"
+      @click="toggle"
     />
     <span class="toggle__switch"></span>
   </label>
@@ -20,6 +21,7 @@
 <script>
 import { SunIcon } from "@heroicons/vue/solid";
 import { MoonIcon } from "@heroicons/vue/solid";
+import { ACTION_TYPES } from "../../store/actionTypes";
 export default {
   name: "Switch",
   components: {
@@ -46,6 +48,11 @@ export default {
       set(newValue) {
         this.currentState = newValue;
       },
+    },
+  },
+  methods: {
+    toggle() {
+      this.$store.dispatch(ACTION_TYPES.TOGGLE_THEME);
     },
   },
 };

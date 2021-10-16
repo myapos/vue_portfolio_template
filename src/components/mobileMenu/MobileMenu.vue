@@ -1,8 +1,17 @@
 <template>
-  <div class="bg-gray-800 p-4 flex justify-between relative">
+  <div
+    class="bg-gray-800 p-4 flex justify-between relative"
+    :class="{
+      'border-1': displayMenu,
+      'border-red-900': displayMenu,
+      'border-0': !displayMenu,
+    }"
+  >
     <menu-icon class="comb text-purple-50" @click="toggle" />
-    <app-mobile-menu-inner-links v-if="displayMenu" />
     <app-switch id="header" :disabled="false" />
+    <transition name="fade">
+      <app-mobile-menu-inner-links v-if="displayMenu" :innerMenuWidth="width" />
+    </transition>
   </div>
 </template>
 
@@ -16,6 +25,9 @@ export default {
     AppSwitch,
     MenuIcon,
     AppMobileMenuInnerLinks,
+  },
+  props: {
+    width: Number,
   },
   data() {
     return {
@@ -34,5 +46,15 @@ export default {
 .comb {
   height: 32px;
   width: 32px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

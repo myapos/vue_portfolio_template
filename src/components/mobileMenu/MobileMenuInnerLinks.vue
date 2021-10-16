@@ -1,9 +1,12 @@
 <template>
-  <div class="absolute top-full">
-    <div class="layer bg-gray-400 p-5 flex flex-col opacity-90">
+  <div
+    class="absolute top-full left-0 p-5 bg-gray-800 opacity-90 rounded-b-sm"
+    :style="{ width: innerMenuWidth + 'px', 'border-top': '1px solid red' }"
+  >
+    <div class="layer flex flex-col">
       <app-link
         v-for="item in items"
-        :key="item"
+        :key="item.target"
         :target="item.target"
         :description="item.description"
       />
@@ -13,10 +16,14 @@
 
 <script>
 import AppLink from "../../ui-kit/links/Link";
+
 export default {
   name: "MobileMenuInnerLinks",
   components: {
     AppLink,
+  },
+  props: {
+    innerMenuWidth: Number,
   },
   data() {
     const data = {
