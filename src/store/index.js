@@ -21,11 +21,18 @@ export default createStore({
   },
   mutations: {
     toggleTheme(state) {
+      let htmlClasses = document.querySelector("html").classList;
+
       state.toggledTheme = !state.toggledTheme;
+
       if (state.toggledTheme) {
+        // enable light theme
         state.activeTheme = state.supportedThemes[1];
+        htmlClasses.remove("dark");
       } else {
+        // enable dark theme
         state.activeTheme = state.supportedThemes[0];
+        htmlClasses.add("dark");
       }
     },
   },

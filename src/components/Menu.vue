@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800 p-4 flex flex-wrap justify-between">
+  <div class="dark:bg-gray-800 p-4 flex flex-wrap justify-between">
     <app-link
       v-for="menuLink in menuLinks"
       :key="menuLink.target"

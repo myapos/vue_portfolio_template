@@ -1,6 +1,14 @@
 <template>
   <div
-    class="absolute top-full left-0 p-5 bg-gray-800 opacity-90 rounded-b-sm"
+    class="
+      absolute
+      top-full
+      left-0
+      p-5
+      dark:bg-gray-800
+      opacity-90
+      rounded-b-sm
+    "
     :style="{ width: innerMenuWidth + 'px', 'border-top': '1px solid red' }"
   >
     <div class="layer flex flex-col">

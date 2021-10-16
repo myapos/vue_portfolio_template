@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-800 p-4 flex justify-between relative"
+    class="dark:bg-gray-800 p-4 flex justify-between relative"
     :class="{
       'border-1': displayMenu,
       'border-red-900': displayMenu,
