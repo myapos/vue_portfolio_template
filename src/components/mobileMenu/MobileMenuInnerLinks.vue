@@ -5,10 +5,10 @@
   >
     <div class="layer flex flex-col">
       <app-link
-        v-for="item in items"
-        :key="item.target"
-        :target="item.target"
-        :description="item.description"
+        v-for="menuLink in menuLinks"
+        :key="menuLink.target"
+        :target="menuLink.target"
+        :description="menuLink.description"
       />
     </div>
   </div>
@@ -16,6 +16,7 @@
 
 <script>
 import AppLink from "../../ui-kit/links/Link";
+import { mapState } from "vuex";
 
 export default {
   name: "MobileMenuInnerLinks",
@@ -25,20 +26,10 @@ export default {
   props: {
     innerMenuWidth: Number,
   },
-  data() {
-    const data = {
-      items: [
-        { target: "home", description: "Home" },
-        { target: "about", description: "About" },
-        { target: "services", description: "Services" },
-        { target: "works", description: "Works" },
-        { target: "team", description: "Team" },
-        { target: "prices", description: "Prices" },
-        { target: "contact", description: "Contact" },
-      ],
-    };
-
-    return data;
+  computed: {
+    ...mapState({
+      menuLinks: (state) => state.menuLinks,
+    }),
   },
 };
 </script>

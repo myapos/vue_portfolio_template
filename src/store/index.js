@@ -8,7 +8,15 @@ export default createStore({
     supportedThemes: ["dark", "light"],
     toggledTheme: false,
     activeTheme: "dark", // can be dark or light
-    menuLinks: [],
+    menuLinks: [
+      { target: "home", description: "Home" },
+      { target: "about", description: "About" },
+      { target: "services", description: "Services" },
+      { target: "works", description: "Works" },
+      { target: "team", description: "Team" },
+      { target: "prices", description: "Prices" },
+      { target: "contact", description: "Contact" },
+    ],
     footerLinks: [],
   },
   mutations: {
@@ -32,6 +40,9 @@ export default createStore({
     },
     getToggledTheme: (state) => () => {
       return state.toggledTheme;
+    },
+    getMenuLinks: (state) => () => {
+      return state.menuLinks;
     },
   },
   modules: {},
