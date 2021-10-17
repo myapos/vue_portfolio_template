@@ -51,8 +51,19 @@ const store = createStore({
       if (isCached) {
         state[common.propertyKeyToLocalStore] = JSON.parse(cachedProperty);
       }
-
-      // check for previous versions and clear storage
+      {
+        //! check for previous versions and clear storage
+        Object.keys(localStorage).forEach((item) => {
+          const regexp = new RegExp(common.basePropertyKey, "ig");
+          if (
+            regexp &&
+            item !== common.propertyKeyToLocalStore &&
+            item !== "loglevel:webpack-dev-server"
+          ) {
+            localStorage.removeItem(item);
+          }
+        });
+      }
     },
   },
   actions: {
