@@ -45,7 +45,6 @@ const store = createStore({
         common.propertyKeyToLocalStore
       );
 
-      console.log("versioned", common.propertyKeyToLocalStore);
       const isCached =
         cachedProperty &&
         cachedProperty.length > 0 &&
@@ -61,11 +60,26 @@ const store = createStore({
           if (
             regexp &&
             item !== common.propertyKeyToLocalStore &&
+            item !== common.propertyKeyForLanguage &&
             item !== "loglevel:webpack-dev-server"
           ) {
             localStorage.removeItem(item);
           }
         });
+      }
+
+      // language caching
+      const cachedLanguage = localStorage.getItem(
+        common.propertyKeyForLanguage
+      );
+
+      const hasCachedLanguage =
+        cachedLanguage &&
+        cachedLanguage.length > 0 &&
+        cachedLanguage === "true";
+      if (hasCachedLanguage) {
+        state[common.propertyKeyForLanguage] = JSON.parse(cachedLanguage);
+        state.activeLanguage = state.supportedLanguages[1];
       }
     },
     toggleLanguage(state) {
@@ -98,16 +112,27 @@ const store = createStore({
     getMenuLinks: (state) => () => {
       return state.menuLinks;
     },
+    getToggledLanguage: (state) => () => {
+      return state[common.propertyKeyForLanguage];
+    },
+    getActiveLanguage: (state) => () => {
+      return state.activeLanguage;
+    },
   },
   modules: {},
 });
 
 store.subscribe((mutation, state) => {
-  const cachedProperty = state[common.propertyKeyToLocalStore];
+  const cachedPropertyTheme = state[common.propertyKeyToLocalStore];
+  const cachedPropertyLanguage = state[common.propertyKeyForLanguage];
 
   localStorage.setItem(
     common.propertyKeyToLocalStore,
-    JSON.stringify(cachedProperty)
+    JSON.stringify(cachedPropertyTheme)
+  );
+  localStorage.setItem(
+    common.propertyKeyForLanguage,
+    JSON.stringify(cachedPropertyLanguage)
   );
 });
 

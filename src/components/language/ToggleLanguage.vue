@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import AppCountryFlag from "vue-country-flag-next";
 import { mapState } from "vuex";
+import AppCountryFlag from "vue-country-flag-next";
 import { ACTION_TYPES } from "../../store/actionTypes";
 
 export default {
@@ -17,15 +17,15 @@ export default {
   components: {
     AppCountryFlag,
   },
-  computed: {
-    ...mapState({
-      activeLanguage: (state) => state.activeLanguage,
-    }),
-  },
   methods: {
     toggleLanguage() {
       this.$store.dispatch(ACTION_TYPES.TOGGLE_LANGUAGE);
     },
+  },
+  computed: {
+    ...mapState({
+      activeLanguage: (state) => state.activeLanguage,
+    }),
   },
 };
 </script>
