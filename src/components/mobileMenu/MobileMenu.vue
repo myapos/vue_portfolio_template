@@ -8,7 +8,10 @@
     }"
   >
     <menu-icon class="comb text-purple-50" @click="toggle" />
+
+    <app-toggle-language />
     <app-switch id="header" :disabled="false" />
+
     <transition name="fade">
       <app-mobile-menu-inner-links v-if="displayMenu" :innerMenuWidth="width" />
     </transition>
@@ -17,14 +20,17 @@
 
 <script>
 import AppSwitch from "../../ui-kit/switch/Switch";
-import AppMobileMenuInnerLinks from "./MobileMenuInnerLinks.vue";
+import AppMobileMenuInnerLinks from "./MobileMenuInnerLinks";
 import { MenuIcon } from "@heroicons/vue/solid";
+import AppToggleLanguage from "../language/ToggleLanguage";
+
 export default {
   name: "MobileMenu",
   components: {
     AppSwitch,
     MenuIcon,
     AppMobileMenuInnerLinks,
+    AppToggleLanguage,
   },
   props: {
     width: Number,
