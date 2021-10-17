@@ -1,13 +1,18 @@
 <template>
-  <div class="dark:bg-gray-800 p-4 flex flex-wrap justify-between">
-    <app-link
-      v-for="menuLink in menuLinks"
-      :key="menuLink.target"
-      :target="menuLink.target"
-      :description="menuLink.description"
-    />
-    <app-toggle-language />
-    <app-switch id="header" :disabled="false" />
+  <div class="dark:bg-gray-800 p-4 flex flex-wrap justify-between items-center">
+    <div class="flex items-center">
+      <app-logo />
+      <app-link
+        v-for="menuLink in menuLinks"
+        :key="menuLink.target"
+        :target="menuLink.target"
+        :description="menuLink.description"
+      />
+    </div>
+
+    <div class="flex items-center">
+      <app-toggle-language /> <app-switch id="header" :disabled="false" />
+    </div>
   </div>
 </template>
 
@@ -16,13 +21,14 @@ import AppLink from "../ui-kit/links/Link";
 import AppSwitch from "../ui-kit/switch/Switch";
 import { mapState } from "vuex";
 import AppToggleLanguage from "./language/ToggleLanguage";
-
+import AppLogo from "../components/logo/Logo";
 export default {
   name: "Menu",
   components: {
     AppLink,
     AppSwitch,
     AppToggleLanguage,
+    AppLogo,
   },
   computed: {
     ...mapState({

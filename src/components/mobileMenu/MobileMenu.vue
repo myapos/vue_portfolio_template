@@ -1,6 +1,6 @@
 <template>
   <div
-    class="dark:bg-gray-800 p-4 flex justify-between relative"
+    class="dark:bg-gray-800 p-4 flex justify-between relative items-center"
     :class="{
       'border-1': displayMenu,
       'border-red-900': displayMenu,
@@ -8,9 +8,10 @@
     }"
   >
     <menu-icon class="comb dark:text-purple-50" @click="toggle" />
-
-    <app-toggle-language />
-    <app-switch id="header" :disabled="false" />
+    <app-logo />
+    <div class="flex">
+      <app-toggle-language /> <app-switch id="header" :disabled="false" />
+    </div>
 
     <transition name="fade">
       <app-mobile-menu-inner-links v-if="displayMenu" :innerMenuWidth="width" />
@@ -23,6 +24,7 @@ import AppSwitch from "../../ui-kit/switch/Switch";
 import AppMobileMenuInnerLinks from "./MobileMenuInnerLinks";
 import { MenuIcon } from "@heroicons/vue/solid";
 import AppToggleLanguage from "../language/ToggleLanguage";
+import AppLogo from "../logo/Logo";
 
 export default {
   name: "MobileMenu",
@@ -31,6 +33,7 @@ export default {
     MenuIcon,
     AppMobileMenuInnerLinks,
     AppToggleLanguage,
+    AppLogo,
   },
   props: {
     width: Number,
