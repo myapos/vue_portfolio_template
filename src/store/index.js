@@ -7,7 +7,7 @@ const store = createStore({
     count: 0,
     articles: [],
     supportedThemes: ["dark", "light"],
-    [common.propertyKeyToLocalStore]: false,
+    [common.propertyKeyToLocalStoreTheme]: false,
     activeTheme: "dark", // can be dark or light
     activeLanguage: "gb",
     supportedLanguages: ["gb", "gr"], //! it can be anything from the supported languages that are mentioned in https://www.npmjs.com/package/vue-country-flag
@@ -26,10 +26,10 @@ const store = createStore({
   mutations: {
     toggleTheme(state) {
       let htmlClasses = document.querySelector("html").classList;
-      state[common.propertyKeyToLocalStore] =
-        !state[common.propertyKeyToLocalStore];
+      state[common.propertyKeyToLocalStoreTheme] =
+        !state[common.propertyKeyToLocalStoreTheme];
 
-      if (state[common.propertyKeyToLocalStore]) {
+      if (state[common.propertyKeyToLocalStoreTheme]) {
         // enable light theme
         state.activeTheme = state.supportedThemes[1];
         htmlClasses.remove("dark");
@@ -41,7 +41,7 @@ const store = createStore({
     },
     initialiseStore(state) {
       const cachedProperty = localStorage.getItem(
-        common.propertyKeyToLocalStore
+        common.propertyKeyToLocalStoreTheme
       );
 
       const isCached =
@@ -50,15 +50,15 @@ const store = createStore({
         cachedProperty === "true";
 
       if (isCached) {
-        state[common.propertyKeyToLocalStore] = JSON.parse(cachedProperty);
+        state[common.propertyKeyToLocalStoreTheme] = JSON.parse(cachedProperty);
       }
       {
         //! check for previous versions and clear storage
         Object.keys(localStorage).forEach((item) => {
-          const regexp = new RegExp(common.basePropertyKey, "ig");
+          const regexp = new RegExp(common.basePropertyKeyTheme, "ig");
           if (
             regexp &&
-            item !== common.propertyKeyToLocalStore &&
+            item !== common.propertyKeyToLocalStoreTheme &&
             item !== common.propertyKeyForLanguage &&
             item !== "loglevel:webpack-dev-server"
           ) {
@@ -108,7 +108,7 @@ const store = createStore({
       return state.activeTheme;
     },
     getToggledTheme: (state) => () => {
-      return state[common.propertyKeyToLocalStore];
+      return state[common.propertyKeyToLocalStoreTheme];
     },
     getMenuLinks: (state) => () => {
       return state.menuLinks;
@@ -124,11 +124,11 @@ const store = createStore({
 });
 
 store.subscribe((mutation, state) => {
-  const cachedPropertyTheme = state[common.propertyKeyToLocalStore];
+  const cachedPropertyTheme = state[common.propertyKeyToLocalStoreTheme];
   const cachedPropertyLanguage = state[common.propertyKeyForLanguage];
 
   localStorage.setItem(
-    common.propertyKeyToLocalStore,
+    common.propertyKeyToLocalStoreTheme,
     JSON.stringify(cachedPropertyTheme)
   );
   localStorage.setItem(

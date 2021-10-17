@@ -1,7 +1,7 @@
 import { version } from "../../package.json";
 
-export const basePropertyKey = "toggledTheme";
-export const propertyKeyToLocalStore = `${version}--${basePropertyKey}`;
+export const basePropertyKeyTheme = "toggledTheme";
+export const propertyKeyToLocalStoreTheme = `${version}--${basePropertyKeyTheme}`;
 
-export const basePropertyKeyForLanguage = "toggledLanguage";
-export const propertyKeyForLanguage = `${version}--${basePropertyKeyForLanguage}`;
+export const basePropertyKeyThemeForLanguage = "toggledLanguage";
+export const propertyKeyForLanguage = `${version}--${basePropertyKeyThemeForLanguage}`;
