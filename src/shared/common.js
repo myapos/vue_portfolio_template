@@ -1,4 +1,4 @@
-// import { version } from "../../package.json";
+import { version } from "../../package.json";
 
 export const basePropertyKey = "toggledTheme";
-export const propertyKeyToLocalStore = `${basePropertyKey}`;
+export const propertyKeyToLocalStore = `${version}--${basePropertyKey}`;

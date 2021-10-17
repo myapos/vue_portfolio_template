@@ -7,7 +7,7 @@ const store = createStore({
     count: 0,
     articles: [],
     supportedThemes: ["dark", "light"],
-    toggledTheme: false,
+    [common.propertyKeyToLocalStore]: false,
     activeTheme: "dark", // can be dark or light
     menuLinks: [
       { target: "home", description: "Home" },
@@ -24,9 +24,10 @@ const store = createStore({
     toggleTheme(state) {
       let htmlClasses = document.querySelector("html").classList;
 
-      state.toggledTheme = !state.toggledTheme;
+      state[common.propertyKeyToLocalStore] =
+        !state[common.propertyKeyToLocalStore];
 
-      if (state.toggledTheme) {
+      if (state[common.propertyKeyToLocalStore]) {
         // enable light theme
         state.activeTheme = state.supportedThemes[1];
         htmlClasses.remove("dark");
@@ -41,13 +42,17 @@ const store = createStore({
         common.propertyKeyToLocalStore
       );
 
+      console.log("versioned", common.propertyKeyToLocalStore);
       const isCached =
         cachedProperty &&
         cachedProperty.length > 0 &&
         cachedProperty === "true";
+
       if (isCached) {
         state[common.propertyKeyToLocalStore] = JSON.parse(cachedProperty);
       }
+
+      // check for previous versions and clear storage
     },
   },
   actions: {
@@ -63,7 +68,7 @@ const store = createStore({
       return state.activeTheme;
     },
     getToggledTheme: (state) => () => {
-      return state.toggledTheme;
+      return state[common.propertyKeyToLocalStore];
     },
     getMenuLinks: (state) => () => {
       return state.menuLinks;
@@ -74,6 +79,7 @@ const store = createStore({
 
 store.subscribe((mutation, state) => {
   const cachedProperty = state[common.propertyKeyToLocalStore];
+
   localStorage.setItem(
     common.propertyKeyToLocalStore,
     JSON.stringify(cachedProperty)
