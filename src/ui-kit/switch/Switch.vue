@@ -34,7 +34,7 @@ export default {
   },
   data() {
     return {
-      currentState: this.disabled,
+      currentState: this.disabled || this.$store.getters.getToggledTheme(),
     };
   },
   computed: {

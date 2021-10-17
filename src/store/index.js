@@ -1,7 +1,8 @@
 import { createStore } from "vuex";
 import { ACTION_TYPES } from "./actionTypes";
+import * as common from "../shared/common";
 
-export default createStore({
+const store = createStore({
   state: {
     count: 0,
     articles: [],
@@ -35,10 +36,26 @@ export default createStore({
         htmlClasses.add("dark");
       }
     },
+    initialiseStore(state) {
+      const cachedProperty = localStorage.getItem(
+        common.propertyKeyToLocalStore
+      );
+
+      const isCached =
+        cachedProperty &&
+        cachedProperty.length > 0 &&
+        cachedProperty === "true";
+      if (isCached) {
+        state[common.propertyKeyToLocalStore] = JSON.parse(cachedProperty);
+      }
+    },
   },
   actions: {
     toggleTheme({ commit }) {
       commit(ACTION_TYPES.TOGGLE_THEME);
+    },
+    initialiseStore({ commit }) {
+      commit(ACTION_TYPES.INITIALISE_STORE);
     },
   },
   getters: {
@@ -54,3 +71,13 @@ export default createStore({
   },
   modules: {},
 });
+
+store.subscribe((mutation, state) => {
+  const cachedProperty = state[common.propertyKeyToLocalStore];
+  localStorage.setItem(
+    common.propertyKeyToLocalStore,
+    JSON.stringify(cachedProperty)
+  );
+});
+
+export default store;
