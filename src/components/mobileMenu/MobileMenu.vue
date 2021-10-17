@@ -7,7 +7,7 @@
       'border-0': !displayMenu,
     }"
   >
-    <menu-icon class="comb text-purple-50" @click="toggle" />
+    <menu-icon class="comb dark:text-purple-50" @click="toggle" />
 
     <app-toggle-language />
     <app-switch id="header" :disabled="false" />
