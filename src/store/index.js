@@ -40,17 +40,15 @@ const store = createStore({
       }
     },
     initialiseStore(state) {
-      const cachedProperty = localStorage.getItem(
+      const cachedTheme = localStorage.getItem(
         common.propertyKeyToLocalStoreTheme
       );
 
-      const isCached =
-        cachedProperty &&
-        cachedProperty.length > 0 &&
-        cachedProperty === "true";
+      const isCachedTheme =
+        cachedTheme && cachedTheme.length > 0 && cachedTheme === "true";
 
-      if (isCached) {
-        state[common.propertyKeyToLocalStoreTheme] = JSON.parse(cachedProperty);
+      if (isCachedTheme) {
+        state[common.propertyKeyToLocalStoreTheme] = JSON.parse(cachedTheme);
       }
       {
         //! check for previous versions and clear storage
@@ -124,16 +122,16 @@ const store = createStore({
 });
 
 store.subscribe((mutation, state) => {
-  const cachedPropertyTheme = state[common.propertyKeyToLocalStoreTheme];
-  const cachedPropertyLanguage = state[common.propertyKeyForLanguage];
+  const cachedThemeTheme = state[common.propertyKeyToLocalStoreTheme];
+  const cachedThemeLanguage = state[common.propertyKeyForLanguage];
 
   localStorage.setItem(
     common.propertyKeyToLocalStoreTheme,
-    JSON.stringify(cachedPropertyTheme)
+    JSON.stringify(cachedThemeTheme)
   );
   localStorage.setItem(
     common.propertyKeyForLanguage,
-    JSON.stringify(cachedPropertyLanguage)
+    JSON.stringify(cachedThemeLanguage)
   );
 });
 
