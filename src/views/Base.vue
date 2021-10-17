@@ -1,17 +1,19 @@
 <template>
-  <app-menu />
-  <div class="base">Base</div>
+  <app-header />
+  <app-about />
   <app-footer />
 </template>
 
 <script>
-import AppMenu from "../components/Menu.vue";
+import AppHeader from "../components/Header.vue";
 import AppFooter from "../components/Footer.vue";
+import AppAbout from "../components/About.vue";
 export default {
   name: "Base",
   components: {
-    AppMenu,
+    AppHeader,
     AppFooter,
+    AppAbout,
   },
   props: {},
 };
