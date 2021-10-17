@@ -9,6 +9,9 @@ const store = createStore({
     supportedThemes: ["dark", "light"],
     [common.propertyKeyToLocalStore]: false,
     activeTheme: "dark", // can be dark or light
+    activeLanguage: "gb",
+    supportedLanguages: ["gb", "gr"], //! it can be anything from the supported languages that are mentioned in https://www.npmjs.com/package/vue-country-flag
+    toggledLanguage: false,
     menuLinks: [
       { target: "home", description: "Home" },
       { target: "about", description: "About" },
@@ -29,11 +32,11 @@ const store = createStore({
 
       if (state[common.propertyKeyToLocalStore]) {
         // enable light theme
-        state.activeTheme = state.supportedThemes[1];
+        state.activeTheme = state.supportedLanguages[1];
         htmlClasses.remove("dark");
       } else {
         // enable dark theme
-        state.activeTheme = state.supportedThemes[0];
+        state.activeTheme = state.supportedLanguages[0];
         htmlClasses.add("dark");
       }
     },
@@ -65,6 +68,14 @@ const store = createStore({
         });
       }
     },
+    toggleLanguage(state) {
+      state.toggledLanguage = !state.toggledLanguage;
+      if (state.toggledLanguage) {
+        state.activeLanguage = state.supportedLanguages[1];
+      } else {
+        state.activeLanguage = state.supportedLanguages[0];
+      }
+    },
   },
   actions: {
     toggleTheme({ commit }) {
@@ -72,6 +83,9 @@ const store = createStore({
     },
     initialiseStore({ commit }) {
       commit(ACTION_TYPES.INITIALISE_STORE);
+    },
+    toggleLanguage({ commit }) {
+      commit(ACTION_TYPES.TOGGLE_LANGUAGE);
     },
   },
   getters: {
