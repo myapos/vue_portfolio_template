@@ -1,12 +1,12 @@
 <template>
   <div>
     <img
-      class="relative"
+      class="relative z-0"
       v-if="activeTheme === 'dark'"
       src="../../assets/black_greet.gif"
     />
     <img
-      class="relative"
+      class="relative z-0"
       v-if="activeTheme === 'light'"
       src="../../assets/white_greet.gif"
     />
@@ -23,41 +23,80 @@
         absolute
       "
     >
-      <div class="intro_text text-4xl mb-10">We have some awesome things</div>
-      <div class="text-base mb-10">Let's make the web beautiful together</div>
-      <div
-        class="
-          ml-auto
-          mr-auto
-          mb-5
-          p-2
-          view_more
-          dark:hover:bg-gray-900
-          hover:bg-gray-100
-          cursor-pointer
-        "
-        :class="{ light_view_more: activeTheme === 'light' }"
-      >
-        View more
+      <!--   <div class="relative">
+        <transition-group name="slide-fade">
+          <div v-if="activeSlide === 'slide1'">
+            <div class="absolute text-center ml-auto mr-auto left-0 right-0">
+              slide 1
+            </div>
+          </div>
+          <div v-if="activeSlide === 'slide2'">
+            <div class="absolute text-center ml-auto mr-auto left-0 right-0">
+              slide 2
+            </div>
+          </div>
+          <div v-if="activeSlide === 'slide3'">
+            <div class="absolute text-center ml-auto mr-auto left-0 right-0">
+              slide 3
+            </div>
+          </div>
+        </transition-group>
+      </div> -->
+      <div class="relative">
+        <transition-group name="slide-fade">
+          <app-slide-1 v-if="activeSlide === 'slide1'" />
+          <app-slide-2 v-if="activeSlide === 'slide2'" />
+          <app-slide-3 v-if="activeSlide === 'slide3'" />
+        </transition-group>
       </div>
-      <div class="flex cursor-pointer justify-center">
-        <mdicon class="ml-2" name="RhombusOutline" />
-        <mdicon class="ml-2" name="RhombusOutline" />
-        <mdicon class="ml-2" name="RhombusOutline" />
+      <div class="flex cursor-pointer justify-center controls">
+        <mdicon
+          class="ml-2"
+          name="RhombusOutline"
+          @click="changeActiveSlide('slide1')"
+        />
+        <mdicon
+          class="ml-2"
+          name="RhombusOutline"
+          @click="changeActiveSlide('slide2')"
+        />
+        <mdicon
+          class="ml-2"
+          name="RhombusOutline"
+          @click="changeActiveSlide('slide3')"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
 import "vue3-carousel/dist/carousel.css";
+import AppSlide1 from "./Slide1.vue";
+import AppSlide2 from "./Slide2.vue";
+import AppSlide3 from "./Slide3.vue";
 export default {
   name: "Slider",
-  components: {},
+  components: {
+    AppSlide1,
+    AppSlide2,
+    AppSlide3,
+  },
+  data() {
+    return {
+      activeSlide: "slide1",
+    };
+  },
   computed: {
-    activeTheme() {
-      return this.$store.getters.getActiveTheme();
+    activeTheme: function () {
+      const activeTheme = this.$store.getters.getActiveTheme();
+      return activeTheme;
+    },
+  },
+  methods: {
+    changeActiveSlide(slide) {
+      console.log("edw", slide, this.activeSlide);
+      this.activeSlide = slide;
     },
   },
 };
@@ -78,11 +117,19 @@ img {
   left: 0;
   right: 0;
 }
-.view_more {
-  max-width: 150px;
-  border: 1px solid white;
+
+.controls {
+  margin-top: 14rem;
 }
-.light_view_more {
-  border: 1px solid black;
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 1.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(-1000px);
+  opacity: 0;
 }
 </style>

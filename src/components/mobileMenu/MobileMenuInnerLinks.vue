@@ -5,13 +5,15 @@
       top-full
       left-0
       p-5
+      bg-gray-100
       dark:bg-gray-800
       opacity-90
       rounded-b-sm
+      layer
     "
     :style="{ width: innerMenuWidth + 'px', 'border-top': '1px solid red' }"
   >
-    <div class="layer flex flex-col">
+    <div class="flex flex-col">
       <app-link
         v-for="menuLink in menuLinks"
         :key="menuLink.target"
@@ -42,4 +44,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.layer {
+  z-index: 1000;
+}
+</style>
