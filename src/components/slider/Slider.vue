@@ -52,17 +52,17 @@
       <div class="flex cursor-pointer justify-center controls">
         <mdicon
           class="ml-2"
-          name="RhombusOutline"
+          :name="activeSlide === 'slide1' ? 'Rhombus' : 'RhombusOutline'"
           @click="changeActiveSlide('slide1')"
         />
         <mdicon
           class="ml-2"
-          name="RhombusOutline"
+          :name="activeSlide === 'slide2' ? 'Rhombus' : 'RhombusOutline'"
           @click="changeActiveSlide('slide2')"
         />
         <mdicon
           class="ml-2"
-          name="RhombusOutline"
+          :name="activeSlide === 'slide3' ? 'Rhombus' : 'RhombusOutline'"
           @click="changeActiveSlide('slide3')"
         />
       </div>
