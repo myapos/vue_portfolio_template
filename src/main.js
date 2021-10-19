@@ -1,4 +1,6 @@
 import { createApp } from "vue";
+import mdiVue from "mdi-vue/v3";
+import * as mdijs from "@mdi/js";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
@@ -11,4 +13,7 @@ let app = createApp(App);
 app.use(i18n);
 app.use(store);
 app.use(router);
+app.use(mdiVue, {
+  icons: mdijs,
+});
 app.mount("#app");
