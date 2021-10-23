@@ -16,7 +16,7 @@
       <hr class="ruler" />
     </div>
     <div class="">little information</div>
-    <section class="flex flex-row justify-center mt-16">
+    <section class="flex flex-row flex-wrap justify-center mt-16">
       <app-card
         header="Who We Are?"
         text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."

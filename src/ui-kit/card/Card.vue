@@ -29,13 +29,13 @@ export default {
 .rotating {
   cursor: pointer;
   transition: transform 1s ease-in-out;
-  transform: rotate(45deg) skew(10deg, 10deg);
+  transform: rotate(45deg);
   border: 2px solid #1f2937;
   background-color: #1f2937;
   padding: 2px;
   background-clip: content-box;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
