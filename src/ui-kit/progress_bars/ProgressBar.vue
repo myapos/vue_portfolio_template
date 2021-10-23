@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="mt-5 mb-5">
     <div class="font-bold">{{ title }}</div>
-    <div class="progress">
+    <div class="progress m-2">
       <div class="progress_bar" :style="{ width: percentage }">
         {{ percentage }}
       </div>
@@ -25,8 +25,7 @@ export default {
   background-color: transparent;
   overflow: visible;
   height: auto;
-  min-width: 800px;
-  margin: 5px;
+  min-width: 840px;
 }
 
 .progress_bar {
@@ -34,7 +33,7 @@ export default {
 }
 
 /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .progress {
     min-width: 200px;
   }
