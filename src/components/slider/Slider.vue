@@ -119,7 +119,7 @@ img {
 }
 
 .controls {
-  margin-top: 14rem;
+  margin-top: 17rem;
 }
 .slide-fade-enter-active {
   transition: all 0.3s ease;

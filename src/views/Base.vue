@@ -8,7 +8,7 @@
 <script>
 import AppHeader from "../components/Header.vue";
 import AppFooter from "../components/Footer.vue";
-import AppAbout from "../components/About.vue";
+import AppAbout from "../components/about/About";
 import AppSlider from "../components/slider/Slider.vue";
 
 export default {
