@@ -19,6 +19,7 @@
               border-gray-500
               rounded-sm
             "
+            @click="download"
           >
             Download
           </div>
@@ -31,6 +32,31 @@
 <script>
 export default {
   name: "Download",
+  data() {
+    return {
+      url: "sample.pdf",
+    };
+  },
+  methods: {
+    download() {
+      // window.open(this.url);
+      fetch(this.url)
+        .then((resp) => resp.blob())
+        .then((blob) => {
+          const url = window.URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.style.display = "none";
+          a.href = url;
+          // the filename you want
+          a.download = "sample.pdf";
+          document.body.appendChild(a);
+          a.click();
+          window.URL.revokeObjectURL(url);
+          alert("Your file has downloaded!"); // or you know, something with better UX...
+        })
+        .catch(() => alert("Oh no!"));
+    },
+  },
 };
 </script>
 
