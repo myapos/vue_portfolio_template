@@ -26,6 +26,9 @@ export default {
 </script>
 
 <style scoped>
+.card {
+  max-width: 640px;
+}
 .rotating {
   cursor: pointer;
   transition: transform 1s ease-in-out;
