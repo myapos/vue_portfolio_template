@@ -1,45 +1,40 @@
 <template>
-  <section class="about p-5 text-center">
-    <div class="header text-3xl">about</div>
-    <div
-      class="
-        subsection
-        flex flex-row
-        justify-center
-        content-center
-        items-center
-        pt-2
-      "
-    >
-      <hr class="ruler" />
-      <div class="p-3"><mdicon name="Information" /></div>
-      <hr class="ruler" />
+  <div class="cta">
+    <div class="container m-auto">
+      <section class="about p-5 text-center">
+        <div class="header text-3xl">about</div>
+        <div class="subsection flex flex-row content-center items-center pt-2">
+          <hr class="ruler" />
+          <div class="p-3"><mdicon name="Information" /></div>
+          <hr class="ruler" />
+        </div>
+        <div class="">little information</div>
+        <section class="cards flex flex-row flex-wrap mt-16">
+          <app-card
+            header="Who We Are?"
+            text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
+            icon="users"
+          />
+          <app-card
+            header="What We Do?"
+            text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
+            icon="headset"
+          />
+          <app-card
+            header="Why We Do it?"
+            text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
+            icon="heart"
+          />
+          <app-card
+            header="Since When?"
+            text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
+            icon="clock"
+          />
+          <!---->
+        </section>
+      </section>
     </div>
-    <div class="">little information</div>
-    <section class="flex flex-row flex-wrap justify-center mt-16">
-      <app-card
-        header="Who We Are?"
-        text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
-        icon="users"
-      />
-      <app-card
-        header="What We Do?"
-        text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
-        icon="headset"
-      />
-      <app-card
-        header="Why We Do it?"
-        text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
-        icon="heart"
-      />
-      <app-card
-        header="Since When?"
-        text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
-        icon="clock"
-      />
-      <!---->
-    </section>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -65,5 +60,14 @@ export default {
 .subsection {
   max-width: 400px;
   margin: 0 auto;
+}
+.cards {
+  justify-content: space-between;
+}
+/* On screens that are 1536px or less, set the background color to olive */
+@media screen and (max-width: 1536px) {
+  .cards {
+    justify-content: space-around;
+  }
 }
 </style>

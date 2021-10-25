@@ -3,6 +3,7 @@
   <app-slider />
   <app-about />
   <app-skills />
+  <app-download />
   <app-footer />
 </template>
 
@@ -12,6 +13,7 @@ import AppFooter from "../components/Footer.vue";
 import AppAbout from "../components/about/About";
 import AppSlider from "../components/slider/Slider.vue";
 import AppSkills from "../components/skills/Skills.vue";
+import AppDownload from "../components/download/Download.vue";
 
 export default {
   name: "Base",
@@ -21,6 +23,7 @@ export default {
     AppAbout,
     AppSlider,
     AppSkills,
+    AppDownload,
   },
   props: {},
 };
