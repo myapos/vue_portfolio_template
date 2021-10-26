@@ -8,6 +8,7 @@ import {
   faHeadset,
   faHeart,
   faClock,
+  faArrowUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -23,6 +24,7 @@ library.add(faUsers);
 library.add(faHeadset);
 library.add(faHeart);
 library.add(faClock);
+library.add(faArrowUp);
 
 let app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
