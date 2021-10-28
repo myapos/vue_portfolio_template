@@ -40,6 +40,7 @@ const store = createStore({
       }
     },
     initialiseStore(state) {
+      debugger;
       const cachedTheme = localStorage.getItem(
         common.propertyKeyToLocalStoreTheme
       );
@@ -49,21 +50,21 @@ const store = createStore({
 
       if (isCachedTheme) {
         state[common.propertyKeyToLocalStoreTheme] = JSON.parse(cachedTheme);
+
+        state.activeTheme = "light";
       }
-      {
-        //! check for previous versions and clear storage
-        Object.keys(localStorage).forEach((item) => {
-          const regexp = new RegExp(common.basePropertyKeyTheme, "ig");
-          if (
-            regexp &&
-            item !== common.propertyKeyToLocalStoreTheme &&
-            item !== common.propertyKeyForLanguage &&
-            item !== "loglevel:webpack-dev-server"
-          ) {
-            localStorage.removeItem(item);
-          }
-        });
-      }
+      //! check for previous versions and clear storage
+      Object.keys(localStorage).forEach((item) => {
+        const regexp = new RegExp(common.basePropertyKeyTheme, "ig");
+        if (
+          regexp &&
+          item !== common.propertyKeyToLocalStoreTheme &&
+          item !== common.propertyKeyForLanguage &&
+          item !== "loglevel:webpack-dev-server"
+        ) {
+          localStorage.removeItem(item);
+        }
+      });
 
       // language caching
       const cachedLanguage = localStorage.getItem(
