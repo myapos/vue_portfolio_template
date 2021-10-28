@@ -40,7 +40,6 @@ const store = createStore({
       }
     },
     initialiseStore(state) {
-      debugger;
       const cachedTheme = localStorage.getItem(
         common.propertyKeyToLocalStoreTheme
       );
