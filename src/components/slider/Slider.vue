@@ -1,15 +1,13 @@
 <template>
   <div>
-    <img
-      class="relative z-0"
+    <div
       v-if="activeTheme === 'dark'"
-      src="../../assets/black_greet.gif"
-    />
-    <img
-      class="relative z-0"
+      class="relative z-0 slide_background slide_background_black"
+    ></div>
+    <div
       v-if="activeTheme === 'light'"
-      src="../../assets/white_greet.gif"
-    />
+      class="relative z-0 slide_background slide_background_white"
+    ></div>
     <div
       class="
         details
@@ -23,25 +21,6 @@
         absolute
       "
     >
-      <!--   <div class="relative">
-        <transition-group name="slide-fade">
-          <div v-if="activeSlide === 'slide1'">
-            <div class="absolute text-center ml-auto mr-auto left-0 right-0">
-              slide 1
-            </div>
-          </div>
-          <div v-if="activeSlide === 'slide2'">
-            <div class="absolute text-center ml-auto mr-auto left-0 right-0">
-              slide 2
-            </div>
-          </div>
-          <div v-if="activeSlide === 'slide3'">
-            <div class="absolute text-center ml-auto mr-auto left-0 right-0">
-              slide 3
-            </div>
-          </div>
-        </transition-group>
-      </div> -->
       <div class="relative">
         <transition-group name="slide-fade">
           <app-slide-1 v-if="activeSlide === 'slide1'" />
@@ -131,5 +110,21 @@ img {
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateX(-1000px);
   opacity: 0;
+}
+.slide_background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: 0px 90px;
+}
+.slide_background_black {
+  background-image: url("../../assets/black_greet.gif");
+  background-color: #000714;
+}
+.slide_background_white {
+  background-image: url("../../assets/white_greet.gif");
+
+  /* background-color: #000714; */
 }
 </style>
