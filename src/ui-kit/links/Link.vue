@@ -1,7 +1,7 @@
 <template>
-  <router-link :to="'/' + target" class="mr-10 dark:text-purple-50">{{
+  <a :href="'#' + target" class="mr-10 dark:text-purple-50">{{
     description
-  }}</router-link>
+  }}</a>
 </template>
 
 <script>
