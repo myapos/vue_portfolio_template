@@ -8,7 +8,7 @@
           <div class="p-3"><mdicon name="Information" /></div>
           <hr class="ruler" />
         </div>
-        <div class="">little information</div>
+        <div class="teaser">little information</div>
         <section class="cards flex flex-row flex-wrap mt-16">
           <app-card
             header="Who We Are?"
@@ -55,7 +55,7 @@ export default {
   max-width: 200px;
   height: px;
   width: 200px;
-  border-top: 1px solid #505254;
+  border-top: 1px solid #ccc;
 }
 .subsection {
   max-width: 400px;
@@ -63,6 +63,9 @@ export default {
 }
 .cards {
   justify-content: space-between;
+}
+.teaser {
+  color: #525252;
 }
 /* On screens that are 1536px or less, set the background color to olive */
 @media screen and (max-width: 1536px) {

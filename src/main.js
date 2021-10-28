@@ -9,6 +9,10 @@ import {
   faHeart,
   faClock,
   faArrowUp,
+  faMobileAlt,
+  faChartPie,
+  faCloud,
+  faPencilAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -25,6 +29,10 @@ library.add(faHeadset);
 library.add(faHeart);
 library.add(faClock);
 library.add(faArrowUp);
+library.add(faMobileAlt);
+library.add(faChartPie);
+library.add(faCloud);
+library.add(faPencilAlt);
 
 let app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
