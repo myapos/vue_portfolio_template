@@ -8,6 +8,7 @@
       v-if="activeTheme === 'light'"
       class="relative z-0 slide_background slide_background_white"
     ></div>
+    <div class="cover absolute left-0 right-0 z-0">test</div>
     <div
       class="
         details
@@ -16,6 +17,7 @@
         mr-auto
         left-0
         right-0
+        text-green-50
         dark:text-gray-50
         z-0
         absolute
@@ -123,10 +125,17 @@ img {
   background-position: 0px 90px;
 }
 .slide_background_black {
-  /* background-image: url("../../assets/office-tools-pc-desk.jpg"); */
+  background-image: url("../../assets/office-tools-pc-desk.jpg");
   background-color: #000714;
 }
 .slide_background_white {
-  /* background-image: url("../../assets/office-tools-pc-desk.jpg"); */
+  background-image: url("../../assets/office-tools-pc-desk.jpg");
+}
+.cover {
+  background-color: #000714;
+  height: 500px;
+  width: 100%;
+  top: 0;
+  opacity: 0.8;
 }
 </style>
