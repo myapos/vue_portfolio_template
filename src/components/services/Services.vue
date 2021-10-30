@@ -1,11 +1,7 @@
 <template>
   <div class="cta" id="services">
     <div class="header font-bold text-3xl text-center m-5">Services</div>
-    <div class="subsection flex flex-row content-center items-center pt-2">
-      <hr class="ruler" />
-      <div class="p-3"><mdicon name="Information" /></div>
-      <hr class="ruler" />
-    </div>
+    <app-ruler />
     <div class="flex justify-center teaser">what we really know how</div>
     <div class="container m-auto">
       <section class="services p-5 flex flex-row flex-wrap justify-center">
@@ -36,10 +32,12 @@
 
 <script>
 import AppServiceCard from "../../ui-kit/services_card/ServiceCard.vue";
+import AppRuler from "../../ui-kit/ruler/Ruler.vue";
 export default {
   name: "Services",
   components: {
     AppServiceCard,
+    AppRuler,
   },
 };
 </script>
