@@ -56,6 +56,7 @@ export default {
 .scroll-icon-container {
   border: 1px solid black;
   transform: rotate(45deg);
+  z-index: 1;
 }
 .scroll-icon-container:hover {
   filter: brightness(150%);

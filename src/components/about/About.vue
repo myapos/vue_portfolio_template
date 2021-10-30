@@ -3,11 +3,7 @@
     <div class="container m-auto">
       <section class="about p-5 text-center">
         <div class="header text-3xl">about</div>
-        <div class="subsection flex flex-row content-center items-center pt-2">
-          <hr class="ruler" />
-          <div class="p-3"><mdicon name="Information" /></div>
-          <hr class="ruler" />
-        </div>
+        <app-ruler name="information" />
         <div class="teaser">little information</div>
         <section class="cards flex flex-row flex-wrap mt-16">
           <app-card
@@ -39,10 +35,13 @@
 
 <script>
 import AppCard from "../../ui-kit/card/Card.vue";
+import AppRuler from "../../ui-kit/ruler/Ruler.vue";
+
 export default {
   name: "About",
   components: {
     AppCard,
+    AppRuler,
   },
 };
 </script>

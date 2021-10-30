@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative">
     <div
       v-if="activeTheme === 'dark'"
       class="relative z-0 slide_background slide_background_black"
@@ -8,6 +8,7 @@
       v-if="activeTheme === 'light'"
       class="relative z-0 slide_background slide_background_white"
     ></div>
+    <div class="cover absolute left-0 right-0 z-0">test</div>
     <div
       class="
         details
@@ -16,16 +17,20 @@
         mr-auto
         left-0
         right-0
+        text-green-50
         dark:text-gray-50
         z-0
         absolute
       "
     >
       <div class="relative">
+        <div class="intro_text text-3xl text-center">Reviews</div>
+        <app-ruler name="information" />
+        <div class="text-2xl m-5">What people say about us</div>
         <transition-group name="slide-fade">
-          <app-slide-1 v-if="activeSlide === 'slide1'" />
-          <app-slide-2 v-if="activeSlide === 'slide2'" />
-          <app-slide-3 v-if="activeSlide === 'slide3'" />
+          <app-review-slide-1 v-if="activeSlide === 'slide1'" />
+          <app-review-slide-2 v-if="activeSlide === 'slide2'" />
+          <app-review-slide-3 v-if="activeSlide === 'slide3'" />
         </transition-group>
       </div>
       <div class="flex cursor-pointer justify-center controls">
@@ -51,15 +56,17 @@
 
 <script>
 import "vue3-carousel/dist/carousel.css";
-import AppSlide1 from "./Slide1.vue";
-import AppSlide2 from "./Slide2.vue";
-import AppSlide3 from "./Slide3.vue";
+import AppReviewSlide1 from "./ReviewSlide1.vue";
+import AppReviewSlide2 from "./ReviewSlide2.vue";
+import AppReviewSlide3 from "./ReviewSlide3.vue";
+import AppRuler from "../../ui-kit/ruler/Ruler.vue";
 export default {
-  name: "Slider",
+  name: "Reviews",
   components: {
-    AppSlide1,
-    AppSlide2,
-    AppSlide3,
+    AppReviewSlide1,
+    AppReviewSlide2,
+    AppReviewSlide3,
+    AppRuler,
   },
   data() {
     return {
@@ -91,13 +98,13 @@ img {
 }
 .details {
   z-index: 1;
-  top: 30%;
   left: 0;
   right: 0;
+  top: 20%;
 }
 
 .controls {
-  margin-top: 17rem;
+  margin-top: 12rem;
 }
 .slide-fade-enter-active {
   transition: all 0.3s ease;
@@ -118,10 +125,17 @@ img {
   background-position: 0px 90px;
 }
 .slide_background_black {
-  background-image: url("../../assets/black_greet.gif");
+  background-image: url("../../assets/office-tools-pc-desk.jpg");
   background-color: #000714;
 }
 .slide_background_white {
-  background-image: url("../../assets/white_greet.gif");
+  background-image: url("../../assets/office-tools-pc-desk.jpg");
+}
+.cover {
+  background-color: #000714;
+  height: 500px;
+  width: 100%;
+  top: 0;
+  opacity: 0.8;
 }
 </style>
