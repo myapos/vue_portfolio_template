@@ -3,7 +3,7 @@
     <div class="container m-auto">
       <section class="about p-5 text-center">
         <div class="header text-3xl">about</div>
-        <app-ruler />
+        <app-ruler name="information" />
         <div class="teaser">little information</div>
         <section class="cards flex flex-row flex-wrap mt-16">
           <app-card

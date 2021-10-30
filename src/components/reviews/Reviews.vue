@@ -23,7 +23,7 @@
     >
       <div class="relative">
         <div class="intro_text text-3xl text-center">Reviews</div>
-        <app-ruler />
+        <app-ruler name="information" />
         <div class="text-2xl m-5">What people say about us</div>
         <transition-group name="slide-fade">
           <app-review-slide-1 v-if="activeSlide === 'slide1'" />
@@ -123,10 +123,10 @@ img {
   background-position: 0px 90px;
 }
 .slide_background_black {
-  /* background-image: url("../../assets/black_greet.gif"); */
+  /* background-image: url("../../assets/office-tools-pc-desk.jpg"); */
   background-color: #000714;
 }
 .slide_background_white {
-  /* background-image: url("../../assets/white_greet.gif"); */
+  /* background-image: url("../../assets/office-tools-pc-desk.jpg"); */
 }
 </style>

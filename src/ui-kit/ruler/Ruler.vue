@@ -10,7 +10,7 @@
     "
   >
     <hr class="ruler" />
-    <div class="p-3"><mdicon name="Information" /></div>
+    <div class="p-3"><mdicon :name="name" /></div>
     <hr class="ruler" />
   </div>
 </template>
@@ -18,6 +18,9 @@
 <script>
 export default {
   name: "ruler",
+  props: {
+    name: String,
+  },
 };
 </script>
 

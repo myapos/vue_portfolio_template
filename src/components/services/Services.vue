@@ -1,7 +1,7 @@
 <template>
   <div class="cta" id="services">
     <div class="header font-bold text-3xl text-center m-5">Services</div>
-    <app-ruler />
+    <app-ruler name="information" />
     <div class="flex justify-center teaser">what we really know how</div>
     <div class="container m-auto">
       <section class="services p-5 flex flex-row flex-wrap justify-center">
