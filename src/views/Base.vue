@@ -6,6 +6,7 @@
   <app-download />
   <app-services />
   <app-reviews />
+  <app-works />
   <app-footer />
   <app-scroll-to-top />
 </template>
@@ -20,6 +21,7 @@ import AppDownload from "../components/download/Download.vue";
 import AppScrollToTop from "../components/scrollToTop/ScrollToTop.vue";
 import AppServices from "../components/services/Services.vue";
 import AppReviews from "../components/reviews/Reviews.vue";
+import AppWorks from "../components/works/Works.vue";
 
 export default {
   name: "Base",
@@ -33,6 +35,7 @@ export default {
     AppScrollToTop,
     AppServices,
     AppReviews,
+    AppWorks,
   },
   props: {},
 };

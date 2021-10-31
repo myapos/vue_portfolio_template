@@ -8,7 +8,7 @@
       v-if="activeTheme === 'light'"
       class="relative z-0 slide_background slide_background_white"
     ></div>
-    <div class="cover absolute left-0 right-0 z-0">test</div>
+    <div class="cover absolute left-0 right-0 z-0"></div>
     <div
       class="
         details

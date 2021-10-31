@@ -49,14 +49,4 @@ export default {
 .teaser {
   color: #525252;
 }
-.ruler {
-  max-width: 200px;
-  height: px;
-  width: 200px;
-  border-top: 1px solid #ccc;
-}
-.subsection {
-  max-width: 400px;
-  margin: 0 auto;
-}
 </style>
