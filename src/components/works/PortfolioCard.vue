@@ -1,6 +1,13 @@
 <template>
   <div class="portfolio_container">
-    <div class="portfolio_details dark:bg-gray-900 dark:text-gray-50">
+    <div
+      class="
+        portfolio_details
+        bg-gray-50
+        text-gray-900
+        dark:bg-gray-900 dark:text-gray-50
+      "
+    >
       <div class="title text-lg p-2">{{ item.title }}</div>
       <div class="text-sm p-2">{{ item.subtitle }}</div>
       <a
