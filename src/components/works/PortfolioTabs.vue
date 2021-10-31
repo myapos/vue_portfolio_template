@@ -1,11 +1,11 @@
 <template>
   <div class="flex justify-center m-5">
-    <ul id="tabs" class="flex">
+    <ul id="tabs" class="flex flex-wrap flex-row">
       <li
         v-for="(tab, index) in tabs"
         :key="tab"
         class="
-          ml-5
+          m-2
           tab
           p-2
           bg-gray-200

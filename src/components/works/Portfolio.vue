@@ -8,25 +8,32 @@
       flex-wrap
       border-gray-500
     "
+    @mouseover="show = true"
+    @mouseout="show = false"
   >
-    <div
-      v-for="item in items"
-      :key="item"
-      class="
-        m-5
-        p-5
-        border-gray-500
-        rounded-sm
-        portfolio_card
-        bg-gray-200
-        dark:bg-gray-500 dark:text-gray-50
-      "
-      :style="{
-        backgroundImage: 'url(' + item.background_image + ')',
-      }"
+    <transition-group
+      name="custom-classes-transition"
+      enter-active-class="animated zoomIn"
+      leave-active-class="animated zoomOut"
     >
-      <app-portfolio-card :item="item" />
-    </div>
+      <div
+        v-for="item in items"
+        :key="item"
+        class="
+          m-5
+          border-gray-500
+          rounded-sm
+          portfolio_card
+          bg-gray-200
+          dark:bg-gray-500 dark:text-gray-50
+        "
+        :style="{
+          backgroundImage: 'url(' + item.background_image + ')',
+        }"
+      >
+        <app-portfolio-card :item="item" />
+      </div>
+    </transition-group>
   </div>
 </template>
 
@@ -39,7 +46,7 @@ export default {
   },
   data() {
     return {
-      test: require("../../assets/p2.jpg"),
+      show: false,
     };
   },
   props: {
@@ -55,7 +62,6 @@ export default {
   margin: 0 auto;
 }
 .portfolio_card {
-  cursor: pointer;
   width: 150px;
   height: 150px;
   background-size: contain;
