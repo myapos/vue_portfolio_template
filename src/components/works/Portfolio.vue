@@ -17,10 +17,13 @@
         p-5
         border-gray-500
         rounded-sm
-        item
+        portfolio_card
         bg-gray-200
         dark:bg-gray-500 dark:text-gray-50
       "
+      :style="{
+        backgroundImage: 'url(' + item.background_image + ')',
+      }"
     >
       <app-portfolio-card :item="item" />
     </div>
@@ -28,11 +31,16 @@
 </template>
 
 <script>
-import AppPortfolioCard from "./ProtfolioCard.vue";
+import AppPortfolioCard from "./PortfolioCard.vue";
 export default {
   name: "Portfolio",
   components: {
     AppPortfolioCard,
+  },
+  data() {
+    return {
+      test: require("../../assets/p2.jpg"),
+    };
   },
   props: {
     items: Array,
@@ -46,7 +54,10 @@ export default {
   max-width: 600px;
   margin: 0 auto;
 }
-.item {
+.portfolio_card {
   cursor: pointer;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
 }
 </style>
