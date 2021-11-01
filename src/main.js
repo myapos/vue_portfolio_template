@@ -13,6 +13,9 @@ import {
   faChartPie,
   faCloud,
   faPencilAlt,
+  faLeaf,
+  faTrophy,
+  faCoffee,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -33,6 +36,9 @@ library.add(faMobileAlt);
 library.add(faChartPie);
 library.add(faCloud);
 library.add(faPencilAlt);
+library.add(faLeaf);
+library.add(faTrophy);
+library.add(faCoffee);
 
 let app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);

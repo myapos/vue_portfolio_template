@@ -42,7 +42,11 @@ export default {
 .portfolio_details {
   width: 100%;
   height: 100%;
-  opacity: 0.85;
+  opacity: 0;
+}
+
+.portfolio_details:hover {
+  opacity: 0.9;
 }
 .demo:hover {
   filter: brightness(150%);
