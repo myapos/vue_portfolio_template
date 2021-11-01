@@ -7,6 +7,7 @@
   <app-services />
   <app-reviews />
   <app-works />
+  <app-fun-facts />
   <app-footer />
   <app-scroll-to-top />
 </template>
@@ -22,6 +23,7 @@ import AppScrollToTop from "../components/scrollToTop/ScrollToTop.vue";
 import AppServices from "../components/services/Services.vue";
 import AppReviews from "../components/reviews/Reviews.vue";
 import AppWorks from "../components/works/Works.vue";
+import AppFunFacts from "../components/funfacts/FunFacts.vue";
 
 export default {
   name: "Base",
@@ -36,6 +38,7 @@ export default {
     AppServices,
     AppReviews,
     AppWorks,
+    AppFunFacts,
   },
   props: {},
 };
