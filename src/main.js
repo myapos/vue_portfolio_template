@@ -16,6 +16,8 @@ import {
   faLeaf,
   faTrophy,
   faCoffee,
+  faMale,
+  faFemale,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -39,6 +41,8 @@ library.add(faPencilAlt);
 library.add(faLeaf);
 library.add(faTrophy);
 library.add(faCoffee);
+library.add(faMale);
+library.add(faFemale);
 
 let app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
