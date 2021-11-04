@@ -26,7 +26,7 @@
       <div class="relative">
         <div class="intro_text text-3xl text-center">Reviews</div>
         <app-ruler name="information" />
-        <div class="text-2xl m-5">What people say about us</div>
+        <div class="m-5 teaser">What people say about us</div>
         <transition-group name="slide-fade">
           <app-review-slide-1 v-if="activeSlide === 'slide1'" />
           <app-review-slide-2 v-if="activeSlide === 'slide2'" />

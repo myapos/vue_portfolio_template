@@ -63,9 +63,7 @@ export default {
 .cards {
   justify-content: space-between;
 }
-.teaser {
-  color: #525252;
-}
+
 /* On screens that are 1536px or less, set the background color to olive */
 @media screen and (max-width: 1536px) {
   .cards {

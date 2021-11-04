@@ -9,6 +9,7 @@
   <app-works />
   <app-fun-facts />
   <app-team />
+  <app-partners />
   <app-footer />
   <app-scroll-to-top />
 </template>
@@ -26,6 +27,7 @@ import AppReviews from "../components/reviews/Reviews.vue";
 import AppWorks from "../components/works/Works.vue";
 import AppFunFacts from "../components/funfacts/FunFacts.vue";
 import AppTeam from "../components/team/Team.vue";
+import AppPartners from "../components/partners/Partners.vue";
 
 export default {
   name: "Base",
@@ -42,6 +44,7 @@ export default {
     AppWorks,
     AppFunFacts,
     AppTeam,
+    AppPartners,
   },
   props: {},
 };
