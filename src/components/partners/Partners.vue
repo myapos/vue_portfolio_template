@@ -26,7 +26,6 @@ export default {
     Slide,
   },
   data() {
-    console.log("data", data);
     return {
       partners: data.partners,
     };
