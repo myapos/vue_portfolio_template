@@ -27,6 +27,7 @@ import router from "./router";
 import store from "./store";
 import i18n from "./i18n";
 import "./assets/tailwind.css";
+import "./assets/global.css";
 
 library.add(faUserSecret);
 library.add(faUsers);

@@ -33,7 +33,7 @@
             SOME FUN FACTS
           </div>
           <app-ruler name="information" v-if="shouldDisplaySectionHeader" />
-          <div class="text-1xl m-5" v-if="shouldDisplaySectionHeader">
+          <div class="m-5 teaser" v-if="shouldDisplaySectionHeader">
             Before anyone is not told
           </div>
         </transition-group>

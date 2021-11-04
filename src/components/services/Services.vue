@@ -46,7 +46,4 @@ export default {
 .header {
   text-transform: uppercase;
 }
-.teaser {
-  color: #525252;
-}
 </style>
