@@ -153,4 +153,13 @@ img {
   top: 0;
   opacity: 0.8;
 }
+
+@media only screen and (max-width: 320px) {
+  /* .cover {
+    overflow: scroll;
+  }
+  .slide_background {
+    overflow: scroll;
+  } */
+}
 </style>

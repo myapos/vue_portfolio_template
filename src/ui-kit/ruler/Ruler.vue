@@ -31,4 +31,10 @@ export default {
   width: 200px;
   border-top: 1px solid #ccc;
 }
+
+@media only screen and (max-width: 640px) {
+  .ruler {
+    width: 100px;
+  }
+}
 </style>

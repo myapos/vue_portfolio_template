@@ -31,15 +31,10 @@ export default {
 </script>
 
 <style scoped>
-img {
-  max-height: 400px;
-  max-width: 200px;
-}
-
-img:hover {
-  cursor: e-resize;
-}
 .intro_text {
   text-transform: uppercase;
+}
+.prices {
+  margin: 0 auto;
 }
 </style>

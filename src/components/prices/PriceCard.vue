@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col bg-gray-200 m-5 overflow-hidden"
+    class="price_card flex flex-col bg-gray-200 m-5 overflow-hidden"
     :class="{
       'border-t-2 border-gray-800': !product.popular,
       'border-b-2 border-gray-800 shadow-2xl popular': product.popular,
@@ -50,5 +50,8 @@ export default {
 .popular {
   zoom: 120%;
   transform: translate(0px, -25px);
+}
+.price_card {
+  min-width: 150px;
 }
 </style>

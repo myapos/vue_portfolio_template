@@ -10,7 +10,7 @@
           <div
             class="
               download_btn
-              flex
+              flex flex-wrap
               p-5
               ml-8
               justify-center

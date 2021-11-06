@@ -54,4 +54,16 @@ export default {
   background-color: white;
   font-size: 0.6rem;
 }
+@media only screen and (max-width: 400px) {
+  .popular_label {
+    right: -73px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .popular_label {
+    right: -55px;
+    top: 15px;
+  }
+}
 </style>
