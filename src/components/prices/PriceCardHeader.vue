@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center">
+  <div class="text-center relative">
     <div
       class="bg-gray-100 pt-5 px-10"
       :class="{
@@ -13,6 +13,12 @@
           rotate: product.icon == 'plug',
         }"
       />
+      <div
+        v-if="product.popular"
+        class="absolute text-gray-800 rotate popular_label text-center"
+      >
+        Popular
+      </div>
     </div>
     <div
       class="bg-gray-100 pb-5 px-10"
@@ -40,5 +46,12 @@ export default {
 <style scoped>
 .rotate {
   transform: rotate(45deg);
+}
+.popular_label {
+  top: 10px;
+  right: -80px;
+  width: 100%;
+  background-color: white;
+  font-size: 0.6rem;
 }
 </style>
