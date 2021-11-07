@@ -86,7 +86,7 @@ img {
 .contact_background {
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 700px;
+  min-height: 800px;
   background-attachment: fixed;
   background-position: 0px 90px;
 }
@@ -99,7 +99,7 @@ img {
 }
 .cover {
   background-color: #000714;
-  height: 700px;
+  height: 800px;
   width: 100%;
   top: 0;
   opacity: 0.8;
