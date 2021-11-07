@@ -32,6 +32,7 @@ import {
   faVuejs,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import VeeValidatePlugin from "./includes/validation";
 
 import App from "./App.vue";
 import "./registerServiceWorker";
@@ -76,4 +77,5 @@ app.use(router);
 app.use(mdiVue, {
   icons: mdijs,
 });
+app.use(VeeValidatePlugin);
 app.mount("#app");

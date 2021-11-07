@@ -12,6 +12,8 @@
   <app-partners />
   <app-prices />
   <app-join-us />
+  <app-contacts />
+  <app-footer-top />
   <app-footer />
   <app-scroll-to-top />
 </template>
@@ -32,6 +34,8 @@ import AppTeam from "../components/team/Team.vue";
 import AppPartners from "../components/partners/Partners.vue";
 import AppPrices from "../components/prices/Prices.vue";
 import AppJoinUs from "../components/join_us/JoinUs.vue";
+import AppContacts from "../components/contacts/Contacts.vue";
+import AppFooterTop from "../components/footerTop/FooterTop.vue";
 
 export default {
   name: "Base",
@@ -51,6 +55,8 @@ export default {
     AppPartners,
     AppPrices,
     AppJoinUs,
+    AppContacts,
+    AppFooterTop,
   },
   props: {},
 };
