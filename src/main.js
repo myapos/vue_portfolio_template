@@ -29,6 +29,7 @@ import {
   faPinterestP,
   faTumblr,
   faDribbble,
+  faVuejs,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -64,6 +65,7 @@ library.add(faTwitter);
 library.add(faPinterestP);
 library.add(faTumblr);
 library.add(faDribbble);
+library.add(faVuejs);
 
 let app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
