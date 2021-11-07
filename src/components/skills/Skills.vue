@@ -1,7 +1,7 @@
 <template>
   <div class="cta">
     <div class="container m-auto">
-      <section class="skills p-5 text-center">
+      <section class="skills p-5 text-center flex flex-wrap">
         <div class="header text-2xl font-bold">Our Skills</div>
         <section class="flex flex-row flex-wrap mt-16 progress_bars_skills">
           <app-progress-bar title="Photoshop & Illustrator" percentage="20%" />

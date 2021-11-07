@@ -1,6 +1,15 @@
 <template>
   <div
-    class="dark:bg-gray-800 p-4 flex justify-between relative items-center"
+    class="
+      dark:bg-gray-800
+      p-4
+      flex flex-row flex-wrap
+      justify-between
+      relative
+      items-center
+      w-full
+      mobile_menu_container
+    "
     :class="{
       'border-1': displayMenu,
       'border-red-900': displayMenu,
@@ -9,7 +18,7 @@
   >
     <menu-icon class="comb dark:text-purple-50" @click="toggle" />
     <app-logo />
-    <div class="flex">
+    <div class="flex flex-wrap">
       <app-toggle-language /> <app-switch id="header" :disabled="false" />
     </div>
 
@@ -65,5 +74,11 @@ export default {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .mobile_menu_container {
+    min-width: 320px;
+  }
 }
 </style>

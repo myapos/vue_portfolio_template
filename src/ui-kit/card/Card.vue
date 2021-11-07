@@ -1,5 +1,5 @@
 <template>
-  <div class="card flex flex-row">
+  <div class="card flex flex-row flex-wrap">
     <div class="m-5">
       <div class="rotate-box-icon rotating">
         <div class="zero-rotation">
