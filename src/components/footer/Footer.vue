@@ -17,14 +17,14 @@
       <a
         href="https://www.free-css.com/assets/files/free-css-templates/preview/page270/unika/"
         target="_blank"
-        class="mx-1 hover:underline"
+        class="mx-1 text-gray-400"
         >Veronika Poljakova</a
       >
       & Developed by
       <a
         href="https://myapos.oncrete.gr"
         target="_blank"
-        class="mx-1 hover:underline"
+        class="mx-1 text-gray-400"
       >
         Myron Apostolakis
       </a>
