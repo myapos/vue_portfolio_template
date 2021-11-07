@@ -8,6 +8,7 @@
       relative
       items-center
       w-full
+      mobile_menu_container
     "
     :class="{
       'border-1': displayMenu,
@@ -73,5 +74,11 @@ export default {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .mobile_menu_container {
+    min-width: 320px;
+  }
 }
 </style>

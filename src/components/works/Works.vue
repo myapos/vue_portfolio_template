@@ -39,7 +39,6 @@ export default {
       if (this.activeTab === "All") {
         const all = [];
         Object.keys(this.categories).forEach((key) => {
-          console.log(this.categories[key]);
           all.push(...this.categories[key]);
         });
         return all;

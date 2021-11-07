@@ -22,7 +22,6 @@ export default {
   name: "Prices",
   components: { AppRuler, AppPriceCard },
   data() {
-    console.log("products", data.products);
     return {
       products: data.products,
     };
