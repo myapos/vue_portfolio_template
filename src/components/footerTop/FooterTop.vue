@@ -29,7 +29,6 @@ export default {
   },
   data() {
     const { data } = db;
-    console.log("data", data);
     return {
       ...data,
     };

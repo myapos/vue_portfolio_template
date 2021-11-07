@@ -22,6 +22,10 @@ import {
   faCog,
   faStar,
   faPlus,
+  faMapMarker,
+  faPhone,
+  faPrint,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -30,6 +34,7 @@ import {
   faTumblr,
   faDribbble,
   faVuejs,
+  faSkype,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import VeeValidatePlugin from "./includes/validation";
@@ -67,6 +72,11 @@ library.add(faPinterestP);
 library.add(faTumblr);
 library.add(faDribbble);
 library.add(faVuejs);
+library.add(faMapMarker);
+library.add(faPhone);
+library.add(faPrint);
+library.add(faEnvelope);
+library.add(faSkype);
 
 let app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
