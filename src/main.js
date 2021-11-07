@@ -23,6 +23,13 @@ import {
   faStar,
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faTwitter,
+  faPinterestP,
+  faTumblr,
+  faDribbble,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import App from "./App.vue";
@@ -52,6 +59,11 @@ library.add(faPlug);
 library.add(faCog);
 library.add(faStar);
 library.add(faPlus);
+library.add(faFacebookF);
+library.add(faTwitter);
+library.add(faPinterestP);
+library.add(faTumblr);
+library.add(faDribbble);
 
 let app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
