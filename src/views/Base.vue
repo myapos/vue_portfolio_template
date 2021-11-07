@@ -11,7 +11,6 @@
   <app-team />
   <app-partners />
   <app-prices />
-  <!---->
   <app-footer />
   <app-scroll-to-top />
 </template>
@@ -27,7 +26,7 @@ import AppScrollToTop from "../components/scrollToTop/ScrollToTop.vue";
 import AppServices from "../components/services/Services.vue";
 import AppReviews from "../components/reviews/Reviews.vue";
 import AppWorks from "../components/works/Works.vue";
-// import AppFunFacts from "../components/funfacts/FunFacts.vue";
+import AppFunFacts from "../components/funfacts/FunFacts.vue";
 import AppTeam from "../components/team/Team.vue";
 import AppPartners from "../components/partners/Partners.vue";
 import AppPrices from "../components/prices/Prices.vue";
@@ -45,7 +44,7 @@ export default {
     AppServices,
     AppReviews,
     AppWorks,
-    // AppFunFacts,
+    AppFunFacts,
     AppTeam,
     AppPartners,
     AppPrices,

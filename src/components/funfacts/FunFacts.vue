@@ -32,8 +32,15 @@
           <div class="intro_text text-3xl text-center" id="sectionHeader">
             SOME FUN FACTS
           </div>
-          <app-ruler name="information" v-if="shouldDisplaySectionHeader" />
-          <div class="m-5 teaser" v-if="shouldDisplaySectionHeader">
+          <app-ruler
+            name="information"
+            v-if="shouldDisplaySectionHeader"
+            class="text-white"
+          />
+          <div
+            class="m-5 teaser custom_teaser"
+            v-if="shouldDisplaySectionHeader"
+          >
             Before anyone is not told
           </div>
         </transition-group>
@@ -154,12 +161,7 @@ img {
   opacity: 0.8;
 }
 
-@media only screen and (max-width: 320px) {
-  /* .cover {
-    overflow: scroll;
-  }
-  .slide_background {
-    overflow: scroll;
-  } */
+.custom_teaser {
+  color: white;
 }
 </style>

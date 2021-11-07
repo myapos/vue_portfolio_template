@@ -26,7 +26,7 @@
       <div class="relative">
         <div class="intro_text text-3xl text-center">Reviews</div>
         <app-ruler name="information" />
-        <div class="m-5 teaser">What people say about us</div>
+        <div class="m-5 teaser custom_teaser">What people say about us</div>
         <transition-group name="slide-fade">
           <app-review-slide-1 v-if="activeSlide === 'slide1'" />
           <app-review-slide-2 v-if="activeSlide === 'slide2'" />
@@ -137,5 +137,8 @@ img {
   width: 100%;
   top: 0;
   opacity: 0.8;
+}
+.custom_teaser {
+  color: white;
 }
 </style>
