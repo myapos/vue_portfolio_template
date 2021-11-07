@@ -1,5 +1,6 @@
 <template>
   <div class="flex flex-col">
+    <div class="text-2xl text-left my-2">Our Address</div>
     <div class="flex flex-row">
       <div class="mr-2">
         <font-awesome-icon icon="map-marker" />

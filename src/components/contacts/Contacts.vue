@@ -30,7 +30,7 @@
         </div>
         <app-ruler name="information" />
         <div class="m-5 teaser custom_teaser">All to contact us</div>
-        <div class="flex flex-row flex-wrap justify-around">
+        <div class="flex flex-row flex-wrap justify-evenly">
           <app-address-info :info="info" />
           <app-contact-form />
         </div>
@@ -69,7 +69,7 @@ export default {
 
 <style scoped>
 img {
-  height: 600px;
+  height: 800px;
   width: 100%;
 }
 
@@ -80,17 +80,13 @@ img {
   z-index: 1;
   left: 0;
   right: 0;
-  top: 20%;
-}
-
-.controls {
-  margin-top: 12rem;
+  top: 5%;
 }
 
 .contact_background {
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 500px;
+  min-height: 700px;
   background-attachment: fixed;
   background-position: 0px 90px;
 }
@@ -103,7 +99,7 @@ img {
 }
 .cover {
   background-color: #000714;
-  height: 500px;
+  height: 700px;
   width: 100%;
   top: 0;
   opacity: 0.8;
