@@ -125,11 +125,11 @@ img {
   background-position: 0px 90px;
 }
 .slide_background_black {
-  background-image: url("../../assets/office-tools-pc-desk.jpg");
+  background-image: url("../../assets/reviews/office-tools-pc-desk.jpg");
   background-color: #000714;
 }
 .slide_background_white {
-  background-image: url("../../assets/office-tools-pc-desk.jpg");
+  background-image: url("../../assets/reviews/office-tools-pc-desk.jpg");
 }
 .cover {
   background-color: #000714;

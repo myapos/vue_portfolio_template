@@ -1,5 +1,5 @@
 <template>
-  <app-inline-svg :src="require('../../assets/tree.svg')" class="logo" />
+  <app-inline-svg :src="require('../../assets/logo/tree.svg')" class="logo" />
 </template>
 
 <script>

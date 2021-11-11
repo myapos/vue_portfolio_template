@@ -3,7 +3,7 @@
     <div class="container m-auto">
       <section class="download p-5">
         <div class="header text-3xl">Download our pdf</div>
-        <div class="flex flex-row items-center max-w-7xl">
+        <div class="flex flex-row items-center max-w-7xl p-5">
           Inspired by nature, follow technology, appreciate the classics. You
           can build modern & professional websites with Unika. The possibilities
           are just endless.
@@ -11,7 +11,6 @@
             class="
               download_btn
               flex flex-wrap
-              p-5
               ml-8
               justify-center
               items-center
