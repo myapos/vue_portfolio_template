@@ -59,7 +59,7 @@ import "vue3-carousel/dist/carousel.css";
 import AppReviewSlide1 from "./ReviewSlide1.vue";
 import AppReviewSlide2 from "./ReviewSlide2.vue";
 import AppReviewSlide3 from "./ReviewSlide3.vue";
-import AppRuler from "../../ui-kit/ruler/Ruler.vue";
+import AppRuler from "@/shared/ruler/Ruler.vue";
 export default {
   name: "Reviews",
   components: {

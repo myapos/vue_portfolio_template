@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import AppRuler from "../../ui-kit/ruler/Ruler.vue";
+import AppRuler from "@/shared/ruler/Ruler.vue";
 import AppFunFactCard from "./FunFactCard.vue";
 import { isInViewport } from "@/helpers/isInViewport";
 export default {

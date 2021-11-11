@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import AppRuler from "../../ui-kit/ruler/Ruler.vue";
+import AppRuler from "@/shared/ruler/Ruler.vue";
 import AppPortfolioTabs from "./PortfolioTabs.vue";
 import AppPortfolio from "./Portfolio.vue";
 import * as data from "./data";

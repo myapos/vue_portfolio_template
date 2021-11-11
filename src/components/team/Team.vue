@@ -32,7 +32,7 @@
 <script>
 import AppTeamCard from "./TeamCard.vue";
 import * as data from "./data";
-import AppRuler from "@/ui-kit/ruler/Ruler.vue";
+import AppRuler from "@/shared/ruler/Ruler.vue";
 export default {
   name: "Team",
   components: {

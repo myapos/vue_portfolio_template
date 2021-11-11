@@ -34,8 +34,8 @@
 </template>
 
 <script>
-import AppCard from "../../ui-kit/card/Card.vue";
-import AppRuler from "../../ui-kit/ruler/Ruler.vue";
+import AppCard from "./Card.vue";
+import AppRuler from "@/shared/ruler/Ruler.vue";
 
 export default {
   name: "About",

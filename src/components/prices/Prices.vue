@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import AppRuler from "@/ui-kit/ruler/Ruler.vue";
+import AppRuler from "@/shared/ruler/Ruler.vue";
 import AppPriceCard from "./PriceCard.vue";
 import * as data from "./data";
 export default {
