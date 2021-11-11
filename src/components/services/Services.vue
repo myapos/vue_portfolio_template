@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import AppServiceCard from "@/ui-kit/services_card/ServiceCard.vue";
+import AppServiceCard from "./ServiceCard.vue";
 import AppRuler from "@/ui-kit/ruler/Ruler.vue";
 export default {
   name: "Services",
