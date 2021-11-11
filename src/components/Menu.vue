@@ -21,7 +21,7 @@ import AppLink from "@/shared/links/Link";
 import AppSwitch from "@/shared/switch/Switch";
 import { mapState } from "vuex";
 import AppToggleLanguage from "./language/ToggleLanguage";
-import AppLogo from "../components/logo/Logo";
+import AppLogo from "@/components/logo/Logo";
 export default {
   name: "Menu",
   components: {
