@@ -11,9 +11,11 @@
             class="
               download_btn
               flex flex-wrap
+              p-5
               ml-8
               justify-center
               items-center
+              text-gray-50
               bg-gray-500
               border-gray-500
               rounded-sm
