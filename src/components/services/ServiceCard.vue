@@ -12,7 +12,7 @@
     <div class="p-5 m-auto">
       <div class="rotate-box-icon rotating">
         <div class="zero-rotation">
-          <font-awesome-icon :icon="icon" color="#fff" size="2x" />
+          <font-awesome-icon :icon="icon" color="#fff" :size="size" />
         </div>
       </div>
     </div>
@@ -28,6 +28,37 @@ export default {
     title: String,
     text: String,
     icon: String,
+  },
+  data() {
+    return {
+      size: this.handleResize().size,
+    };
+  },
+  mounted() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      let size = "2x";
+
+      if (screen.width < 1024) {
+        size = "2x";
+      }
+      if (screen.width < 728) {
+        size = "1x";
+      }
+
+      if (screen.width < 545) {
+        size = "1x";
+      }
+
+      this.size = size;
+      return { size };
+    },
   },
 };
 </script>
@@ -60,5 +91,12 @@ export default {
 }
 .zero-rotation:hover {
   transform: rotateZ(-90deg);
+}
+/* On screens that are 1536px or less, set the background color to olive */
+@media screen and (max-width: 728px) {
+  .rotating {
+    height: 30px;
+    width: 30px;
+  }
 }
 </style>
