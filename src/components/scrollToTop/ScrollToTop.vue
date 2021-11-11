@@ -3,15 +3,17 @@
     <div
       v-if="showScrollOnTop"
       class="
-        p-5
+        p-2
+        md:p-5
         scroll-icon-container
         flex
         justify-center
         items-center
         fixed
         bg-gray-100
-        h-10
-        w-10
+        h-6
+        w-6
+        md:h-10 md:w-10
         bottom-5
         right-5
         mix-blend-exclusion
