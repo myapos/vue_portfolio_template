@@ -147,11 +147,11 @@ img {
   background-position: 0px 90px;
 }
 .slide_background_black {
-  background-image: url("../../assets/business-marketing-meeting-office.jpg");
+  background-image: url("../../assets/funfacts/business-marketing-meeting-office.jpg");
   background-color: #000714;
 }
 .slide_background_white {
-  background-image: url("../../assets/business-marketing-meeting-office.jpg");
+  background-image: url("../../assets/funfacts/business-marketing-meeting-office.jpg");
 }
 .cover {
   background-color: #000714;

@@ -118,10 +118,10 @@ img {
   background-position: 0px 90px;
 }
 .slide_background_black {
-  background-image: url("../../assets/black_greet.gif");
+  background-image: url("../../assets/slider/black_greet.gif");
   background-color: #000714;
 }
 .slide_background_white {
-  background-image: url("../../assets/white_greet.gif");
+  background-image: url("../../assets/slider/white_greet.gif");
 }
 </style>

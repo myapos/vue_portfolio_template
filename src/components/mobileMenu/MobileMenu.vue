@@ -32,7 +32,7 @@
 import AppSwitch from "@/shared/switch/Switch";
 import AppMobileMenuInnerLinks from "./MobileMenuInnerLinks";
 import { MenuIcon } from "@heroicons/vue/solid";
-import AppToggleLanguage from "../language/ToggleLanguage";
+import AppToggleLanguage from "@/components/language/ToggleLanguage";
 import AppLogo from "../logo/Logo";
 
 export default {
