@@ -19,23 +19,23 @@
 </template>
 
 <script>
-import AppHeader from "../components/Header.vue";
-import AppFooter from "../components/footer/Footer.vue";
-import AppAbout from "../components/about/About";
-import AppSlider from "../components/slider/Slider.vue";
-import AppSkills from "../components/skills/Skills.vue";
-import AppDownload from "../components/download/Download.vue";
-import AppScrollToTop from "../components/scrollToTop/ScrollToTop.vue";
-import AppServices from "../components/services/Services.vue";
-import AppReviews from "../components/reviews/Reviews.vue";
-import AppWorks from "../components/works/Works.vue";
-import AppFunFacts from "../components/funfacts/FunFacts.vue";
-import AppTeam from "../components/team/Team.vue";
-import AppPartners from "../components/partners/Partners.vue";
-import AppPrices from "../components/prices/Prices.vue";
-import AppJoinUs from "../components/join_us/JoinUs.vue";
-import AppContacts from "../components/contacts/Contacts.vue";
-import AppFooterTop from "../components/footerTop/FooterTop.vue";
+import AppHeader from "@/components/Header.vue";
+import AppFooter from "@/components/footer/Footer.vue";
+import AppAbout from "@/components/about/About";
+import AppSlider from "@/components/slider/Slider.vue";
+import AppSkills from "@/components/skills/Skills.vue";
+import AppDownload from "@/components/download/Download.vue";
+import AppScrollToTop from "@/components/scrollToTop/ScrollToTop.vue";
+import AppServices from "@/components/services/Services.vue";
+import AppReviews from "@/components/reviews/Reviews.vue";
+import AppWorks from "@/components/works/Works.vue";
+import AppFunFacts from "@/components/funfacts/FunFacts.vue";
+import AppTeam from "@/components/team/Team.vue";
+import AppPartners from "@/components/partners/Partners.vue";
+import AppPrices from "@/components/prices/Prices.vue";
+import AppJoinUs from "@/components/join_us/JoinUs.vue";
+import AppContacts from "@/components/contacts/Contacts.vue";
+import AppFooterTop from "@/components/footerTop/FooterTop.vue";
 
 export default {
   name: "Base",
