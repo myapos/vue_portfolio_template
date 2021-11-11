@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import AppRuler from "@/ui-kit/ruler/Ruler.vue";
+import AppRuler from "@/shared/ruler/Ruler.vue";
 import AppAddressInfo from "./AddressInfo.vue";
 import AppContactForm from "./ContactForm.vue";
 import * as db from "./data";

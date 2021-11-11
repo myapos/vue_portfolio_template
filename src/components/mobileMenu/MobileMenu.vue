@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import AppSwitch from "../../ui-kit/switch/Switch";
+import AppSwitch from "@/shared/switch/Switch";
 import AppMobileMenuInnerLinks from "./MobileMenuInnerLinks";
 import { MenuIcon } from "@heroicons/vue/solid";
 import AppToggleLanguage from "../language/ToggleLanguage";

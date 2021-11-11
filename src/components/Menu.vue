@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import AppLink from "../ui-kit/links/Link";
-import AppSwitch from "../ui-kit/switch/Switch";
+import AppLink from "@/shared/links/Link";
+import AppSwitch from "@/shared/switch/Switch";
 import { mapState } from "vuex";
 import AppToggleLanguage from "./language/ToggleLanguage";
 import AppLogo from "../components/logo/Logo";

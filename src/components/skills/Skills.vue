@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import AppProgressBar from "../../ui-kit/progress_bars/ProgressBar.vue";
+import AppProgressBar from "@/shared/progress_bars/ProgressBar.vue";
 export default {
   name: "Skills",
   components: {

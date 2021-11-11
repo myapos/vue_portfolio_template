@@ -18,7 +18,7 @@
 
 <script>
 import { Carousel, Slide } from "vue3-carousel";
-import AppRuler from "@/ui-kit/ruler/Ruler.vue";
+import AppRuler from "@/shared/ruler/Ruler.vue";
 import "vue3-carousel/dist/carousel.css";
 import * as data from "./data";
 

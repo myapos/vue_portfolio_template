@@ -35,7 +35,7 @@
 
 <script>
 import AppCard from "./Card.vue";
-import AppRuler from "../../ui-kit/ruler/Ruler.vue";
+import AppRuler from "@/shared/ruler/Ruler.vue";
 
 export default {
   name: "About",

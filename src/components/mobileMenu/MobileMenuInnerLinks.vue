@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import AppLink from "../../ui-kit/links/Link";
+import AppLink from "@/shared/links/Link";
 import { mapState } from "vuex";
 
 export default {

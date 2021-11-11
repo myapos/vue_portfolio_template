@@ -32,7 +32,7 @@
 
 <script>
 import AppServiceCard from "./ServiceCard.vue";
-import AppRuler from "@/ui-kit/ruler/Ruler.vue";
+import AppRuler from "@/shared/ruler/Ruler.vue";
 export default {
   name: "Services",
   components: {
