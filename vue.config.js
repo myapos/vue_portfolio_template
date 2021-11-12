@@ -1,10 +1,10 @@
 module.exports = {
   pluginOptions: {
     i18n: {
-      locale: undefined,
-      fallbackLocale: undefined,
-      localeDir: undefined,
-      enableLegacy: undefined,
+      locale: "en",
+      fallbackLocale: "en",
+      localeDir: "locales",
+      enableLegacy: false,
       runtimeOnly: false,
       compositionOnly: false,
       fullInstall: true,

@@ -115,7 +115,6 @@ export default {
   },
   methods: {
     submit(values) {
-      console.log("values", values);
       alert(JSON.stringify(values));
     },
     handleResize() {
@@ -134,8 +133,6 @@ export default {
         num_of_cols = 1;
         num_of_rows = 1;
       }
-
-      console.log("num_of_cols", num_of_cols, " num_of_rows", num_of_rows);
 
       this.num_of_cols = num_of_cols;
       this.num_of_rows = num_of_rows;

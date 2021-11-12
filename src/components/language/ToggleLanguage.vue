@@ -19,6 +19,7 @@ export default {
   },
   methods: {
     toggleLanguage() {
+      console.log("this", this.$i18n);
       this.$store.dispatch(ACTION_TYPES.TOGGLE_LANGUAGE);
     },
   },

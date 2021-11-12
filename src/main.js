@@ -43,7 +43,7 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
-import i18n from "./i18n";
+import i18n from "./includes/i18n";
 import "./assets/tailwind.css";
 import "./assets/global.css";
 
