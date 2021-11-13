@@ -19,7 +19,6 @@
 <script>
 import AppLink from "@/shared/links/Link";
 import AppSwitch from "@/shared/switch/Switch";
-import { mapState } from "vuex";
 import AppToggleLanguage from "@/components/language/ToggleLanguage";
 import AppLogo from "@/components/logo/Logo";
 
@@ -32,9 +31,10 @@ export default {
     AppLogo,
   },
   computed: {
-    ...mapState({
-      menuLinks: (state) => state.menuLinks,
-    }),
+    menuLinks: function () {
+      const menuLinks = this.$store.getters.getMenuLinks();
+      return menuLinks;
+    },
   },
 };
 </script>

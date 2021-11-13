@@ -1,3 +1,15 @@
 {
-  "test": "test"
+  "Menu": {
+    "About": "About",
+    "Contact": "Contact",
+    "Home": "Home",
+    "Prices": "Prices",
+    "Services": "Services",
+    "Team": "Team",
+    "Works": "Works"
+  },
+  "about": {
+    "subtitle": "little information",
+    "title": "about"
+  }
 }

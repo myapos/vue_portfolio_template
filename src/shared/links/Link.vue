@@ -1,6 +1,6 @@
 <template>
   <a :href="'#' + target" class="mr-10 dark:text-purple-50">{{
-    description
+    $t(description)
   }}</a>
 </template>
 

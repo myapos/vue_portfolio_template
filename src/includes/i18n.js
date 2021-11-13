@@ -23,10 +23,12 @@ function loadLocaleMessages() {
   return messages;
 }
 
-export default createI18n({
+const i18n = createI18n({
   legacy: false,
   locale: process.env.VUE_APP_I18N_LOCALE || "en",
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "en",
   messages: loadLocaleMessages(),
   globalInjection: true,
 });
+
+export default i18n;
