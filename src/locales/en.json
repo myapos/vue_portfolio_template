@@ -51,8 +51,13 @@
     }
   },
   "Works": {
+    "all": "All",
+    "app_development": "App development",
+    "graphics_design": "Graphics design",
+    "responsive": "Responsive",
     "subtitle": "What we are proud of",
-    "title": "Works"
+    "title": "Works",
+    "websites": "Websites"
   },
   "lorem_ipsum": "Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.",
   "our_skills": "Our Skills",

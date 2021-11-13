@@ -38,7 +38,8 @@ export default {
   },
   computed: {
     items: function () {
-      if (this.activeTab === "All") {
+      console.log("this", this.activeTab);
+      if (this.activeTab === "Works.all") {
         const all = [];
         Object.keys(this.categories).forEach((key) => {
           all.push(...this.categories[key]);
