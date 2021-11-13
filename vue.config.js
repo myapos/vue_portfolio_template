@@ -5,9 +5,7 @@ module.exports = {
       fallbackLocale: "en",
       localeDir: "locales",
       enableLegacy: false,
-      runtimeOnly: false,
-      compositionOnly: false,
-      fullInstall: true,
+      enableInSFC: false,
     },
   },
 };

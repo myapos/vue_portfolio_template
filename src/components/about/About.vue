@@ -5,6 +5,7 @@
         <div class="header text-3xl">about</div>
         <app-ruler name="information" />
         <div class="teaser">little information</div>
+        <!--  <h2>{{ $t("test") }}</h2> -->
         <section class="cards flex flex-row flex-wrap mt-16">
           <app-card
             header="Who We Are?"

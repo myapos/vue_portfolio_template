@@ -78,10 +78,9 @@ library.add(faPrint);
 library.add(faEnvelope);
 library.add(faSkype);
 
-let app = createApp(App);
+let app = createApp(App).use(i18n);
 app.component("font-awesome-icon", FontAwesomeIcon);
 
-app.use(i18n);
 app.use(store);
 app.use(router);
 app.use(mdiVue, {
