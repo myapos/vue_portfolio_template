@@ -10,21 +10,36 @@
 <script>
 import { mapState } from "vuex";
 import AppCountryFlag from "vue-country-flag-next";
-import { ACTION_TYPES } from "../../store/actionTypes";
+import { ACTION_TYPES } from "@/store/actionTypes";
 
 export default {
   name: "ToggleLanguage",
   components: {
     AppCountryFlag,
   },
+  mounted() {
+    this.$i18n.locale = this.$store.state.activeLanguage === "gb" ? "en" : "el";
+  },
+  data() {
+    return {};
+  },
   methods: {
     toggleLanguage() {
       this.$store.dispatch(ACTION_TYPES.TOGGLE_LANGUAGE);
+      this.changeLocale();
+    },
+    changeLocale() {
+      console.log("this.$i18n.locale", this.$store.state.activeLanguage);
+      this.$i18n.locale =
+        this.$store.state.activeLanguage === "gb" ? "en" : "el";
     },
   },
   computed: {
     ...mapState({
-      activeLanguage: (state) => state.activeLanguage,
+      activeLanguage: (state) => {
+        // this.$i18n.locale = state.activeLanguage === "gb" ? "en" : "el";
+        return state.activeLanguage;
+      },
     }),
   },
 };

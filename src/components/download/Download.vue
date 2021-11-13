@@ -2,11 +2,9 @@
   <div class="cta">
     <div class="container m-auto">
       <section class="download p-5">
-        <div class="header text-3xl">Download our pdf</div>
+        <div class="header text-3xl">{{ $t("Download.download_our_pdf") }}</div>
         <div class="flex flex-row items-center max-w-7xl p-5">
-          Inspired by nature, follow technology, appreciate the classics. You
-          can build modern & professional websites with Unika. The possibilities
-          are just endless.
+          {{ $t("Download.text") }}
           <div
             class="
               download_btn
@@ -22,7 +20,7 @@
             "
             @click="download"
           >
-            Download
+            {{ $t("Download.download") }}
           </div>
         </div>
       </section>

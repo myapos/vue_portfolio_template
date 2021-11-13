@@ -1,3 +1,48 @@
 {
-  "message": "hello i18n !!"
+  "About": {
+    "since_when": "Since When?",
+    "title": "about",
+    "what_we_do": "What We Do?",
+    "who_we_are": "Who We Are?",
+    "why_we_do_it": "Why We Do it?"
+  },
+  "Download": {
+    "download": "download",
+    "download_our_pdf": "Download our pdf",
+    "text": "Inspired by nature, follow technology, appreciate the classics. You can build modern & professional websites with Iris. The possibilities are just endless."
+  },
+  "Menu": {
+    "about": "About",
+    "contact": "Contact",
+    "home": "Home",
+    "prices": "Prices",
+    "services": "Services",
+    "team": "Team",
+    "works": "Works"
+  },
+  "Services": {
+    "app_development": "App Development",
+    "cloud_hosting": "Cloud Hosting",
+    "clouding_pen": "Coding Pen",
+    "subtitle": "what we really know how",
+    "title": "Services",
+    "ui_design": "UI Design"
+  },
+  "Slider": {
+    "Slide1": {
+      "subtitle": "Let's make the web beautiful together",
+      "title": "We have some awesome things"
+    },
+    "Slide2": {
+      "subtitle": "To the greatest journey",
+      "title": "Join with us"
+    },
+    "Slide3": {
+      "subtitle": "One responsive theme",
+      "title": "I am Iris"
+    }
+  },
+  "lorem_ipsum": "Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.",
+  "our_skills": "Our Skills",
+  "view_more": "View more"
 }

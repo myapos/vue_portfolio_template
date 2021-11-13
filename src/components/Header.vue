@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import AppMenu from "./Menu.vue";
+import AppMenu from "./menu/Menu.vue";
 import AppMobileMenu from "./mobileMenu/MobileMenu.vue";
 
 export default {
