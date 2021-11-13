@@ -5,7 +5,6 @@
         <div class="header text-3xl">{{ $t("About.title") }}</div>
         <app-ruler name="information" />
         <div class="teaser">{{ $t("About.subtitle") }}</div>
-        <!--  <h2>{{ $t("test") }}</h2> -->
         <section class="cards flex flex-row flex-wrap mt-16">
           <app-card
             :header="$t('About.who_we_are')"
@@ -29,7 +28,6 @@
             :text="$t('lorem_ipsum')"
             icon="clock"
           />
-          <!---->
         </section>
       </section>
     </div>
