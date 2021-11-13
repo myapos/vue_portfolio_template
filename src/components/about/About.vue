@@ -8,23 +8,25 @@
         <!--  <h2>{{ $t("test") }}</h2> -->
         <section class="cards flex flex-row flex-wrap mt-16">
           <app-card
-            header="Who We Are?"
-            text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
+            :header="$t('About.who_we_are')"
+            text="Lorem ipsum dolor sit
+          amet set, consectetur utes anet adipisicing elit, sed do eiusmod
+          tempor incidist."
             icon="users"
           />
           <app-card
-            header="What We Do?"
-            text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
+            :header="$t('About.what_we_do')"
+            :text="$t('lorem_ipsum')"
             icon="headset"
           />
           <app-card
-            header="Why We Do it?"
-            text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
+            :header="$t('About.why_we_do_it')"
+            :text="$t('lorem_ipsum')"
             icon="heart"
           />
           <app-card
-            header="Since When?"
-            text="Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist."
+            :header="$t('About.since_when')"
+            :text="$t('lorem_ipsum')"
             icon="clock"
           />
           <!---->

@@ -1,6 +1,15 @@
 {
   "About": {
-    "title": "about"
+    "since_when": "Since When?",
+    "title": "about",
+    "what_we_do": "What We Do?",
+    "who_we_are": "Who We Are?",
+    "why_we_do_it": "Why We Do it?"
+  },
+  "Download": {
+    "download": "download",
+    "download_our_pdf": "Download our pdf",
+    "text": "Inspired by nature, follow technology, appreciate the classics. You can build modern & professional websites with Iris. The possibilities are just endless."
   },
   "Menu": {
     "about": "About",
@@ -25,5 +34,7 @@
       "title": "I am Iris"
     }
   },
+  "lorem_ipsum": "Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.",
+  "our_skills": "Our Skills",
   "view_more": "View more"
 }
