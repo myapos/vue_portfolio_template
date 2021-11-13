@@ -29,7 +29,6 @@ export default {
       this.changeLocale();
     },
     changeLocale() {
-      console.log("this.$i18n.locale", this.$store.state.activeLanguage);
       this.$i18n.locale =
         this.$store.state.activeLanguage === "gb" ? "en" : "el";
     },
@@ -37,7 +36,6 @@ export default {
   computed: {
     ...mapState({
       activeLanguage: (state) => {
-        // this.$i18n.locale = state.activeLanguage === "gb" ? "en" : "el";
         return state.activeLanguage;
       },
     }),

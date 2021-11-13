@@ -24,14 +24,14 @@
       "
     >
       <div class="relative">
+        <div class="intro_text text-3xl text-center" id="sectionHeader">
+          SOME FUN FACTS
+        </div>
         <transition-group
           name="custom-classes-transition"
           enter-active-class="animated fadeInDown"
           leave-active-class="animated fadeInUp"
         >
-          <div class="intro_text text-3xl text-center" id="sectionHeader">
-            SOME FUN FACTS
-          </div>
           <app-ruler
             name="information"
             v-if="shouldDisplaySectionHeader"

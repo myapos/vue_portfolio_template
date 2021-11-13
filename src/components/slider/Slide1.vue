@@ -31,6 +31,12 @@ export default {
       console.log("edw", slide);
     },
   },
+  computed: {
+    activeTheme: function () {
+      const activeTheme = this.$store.getters.getActiveTheme();
+      return activeTheme;
+    },
+  },
 };
 </script>
 

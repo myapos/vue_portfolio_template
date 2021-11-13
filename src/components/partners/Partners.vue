@@ -5,8 +5,8 @@
     <div class="m-5 text-center teaser">Those who trust us</div>
     <carousel
       :items-to-show="num_of_items"
-      autoplay="2000"
-      pauseAutoplayOnHover="true"
+      :autoplay="2000"
+      :pauseAutoplayOnHover="true"
     >
       <slide v-for="partner in partners" :key="partner.id"
         ><img :src="partner.background_image"
