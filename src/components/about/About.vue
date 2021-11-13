@@ -2,9 +2,9 @@
   <div class="cta" id="about">
     <div class="container m-auto">
       <section class="about p-5 text-center">
-        <div class="header text-3xl">{{ $t("about.title") }}</div>
+        <div class="header text-3xl">{{ $t("About.title") }}</div>
         <app-ruler name="information" />
-        <div class="teaser">{{ $t("about.subtitle") }}</div>
+        <div class="teaser">{{ $t("About.subtitle") }}</div>
         <!--  <h2>{{ $t("test") }}</h2> -->
         <section class="cards flex flex-row flex-wrap mt-16">
           <app-card

@@ -1,12 +1,15 @@
 {
+  "About": {
+    "title": "about"
+  },
   "Menu": {
-    "About": "About",
-    "Contact": "Contact",
-    "Home": "Home",
-    "Prices": "Prices",
-    "Services": "Services",
-    "Team": "Team",
-    "Works": "Works"
+    "about": "About",
+    "contact": "Contact",
+    "home": "Home",
+    "prices": "Prices",
+    "services": "Services",
+    "team": "Team",
+    "works": "Works"
   },
   "Slider": {
     "Slide1": {
@@ -21,10 +24,6 @@
       "subtitle": "One responsive theme",
       "title": "I am Iris"
     }
-  },
-  "about": {
-    "subtitle": "little information",
-    "title": "about"
   },
   "view_more": "View more"
 }

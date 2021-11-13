@@ -1,12 +1,16 @@
 {
+  "About": {
+    "subtitle": "λιγες πληροφοριες",
+    "title": "σχετικα"
+  },
   "Menu": {
-    "About": "Σχετικα",
-    "Contact": "Επικοινωνια",
-    "Home": "Κεντρικη",
-    "Prices": "Τιμες",
-    "Services": "Υπηρεσιες",
-    "Team": "Ομαδα",
-    "Works": "Εργα"
+    "about": "Σχετικα",
+    "contact": "Επικοινωνια",
+    "home": "Κεντρικη",
+    "prices": "Τιμες",
+    "services": "Υπηρεσιες",
+    "team": "Ομαδα",
+    "works": "Εργα"
   },
   "Slider": {
     "Slide1": {
@@ -15,16 +19,12 @@
     },
     "Slide2": {
       "subtitle": "Στο πιο φανταστικο ταξιδι",
-      "title": "Ελάτε μαζί μας"
+      "title": "Ελατε μαζι μας"
     },
     "Slide3": {
-      "subtitle": "Ένα responsive theme",
-      "title": "Είμαι η Ιρις"
+      "subtitle": "Ενα responsive theme",
+      "title": "Ειμαι η Ιρις"
     }
-  },
-  "about": {
-    "subtitle": "λιγες πληροφοριες",
-    "title": "σχετικα"
   },
   "view_more": "Δες περισσοτερα"
 }

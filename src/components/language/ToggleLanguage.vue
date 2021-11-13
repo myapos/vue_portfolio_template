@@ -17,6 +17,9 @@ export default {
   components: {
     AppCountryFlag,
   },
+  mounted() {
+    this.$i18n.locale = this.$store.state.activeLanguage === "gb" ? "en" : "el";
+  },
   data() {
     return {};
   },
