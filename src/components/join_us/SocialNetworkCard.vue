@@ -14,7 +14,6 @@
         <a target="_blank" :href="social_network.url" class="zero-rotation">
           <font-awesome-icon
             :icon="{ prefix: 'fab', iconName: social_network.icon }"
-            size="md"
             class="text-white"
           />
         </a>

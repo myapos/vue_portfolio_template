@@ -23,7 +23,13 @@
 
 <script>
 export default {
-  name: "Slide1",
+  name: "Slide2",
+  computed: {
+    activeTheme: function () {
+      const activeTheme = this.$store.getters.getActiveTheme();
+      return activeTheme;
+    },
+  },
 };
 </script>
 
