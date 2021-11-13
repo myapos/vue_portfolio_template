@@ -21,6 +21,14 @@
     "team": "Ομαδα",
     "works": "Εργα"
   },
+  "Services": {
+    "app_development": "Ανάπτυξη εφαρμογών",
+    "cloud_hosting": "Φιλοξενία σε cloud",
+    "clouding_pen": "Δείγματα κώδικα",
+    "subtitle": "αυτό που πραγματικά ξέρουμε",
+    "title": "Υπηρεσιες",
+    "ui_design": "Σχεδίαση UI"
+  },
   "Slider": {
     "Slide1": {
       "subtitle": "Ας κανουμε το διαδικτυο ομορφο μαζι",

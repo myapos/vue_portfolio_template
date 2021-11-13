@@ -20,6 +20,14 @@
     "team": "Team",
     "works": "Works"
   },
+  "Services": {
+    "app_development": "App Development",
+    "cloud_hosting": "Cloud Hosting",
+    "clouding_pen": "Coding Pen",
+    "subtitle": "what we really know how",
+    "title": "Services",
+    "ui_design": "UI Design"
+  },
   "Slider": {
     "Slide1": {
       "subtitle": "Let's make the web beautiful together",
