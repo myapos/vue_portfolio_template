@@ -3,8 +3,7 @@
     <!-- <div> -->
     <blockquote class="text-1xl flex justify-center">
       <div class="quote mb-6">
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        {{ $t("Reviews.slide2") }}
       </div>
     </blockquote>
     <footer class="text-base mb-2">

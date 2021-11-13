@@ -24,9 +24,11 @@
       "
     >
       <div class="relative">
-        <div class="intro_text text-3xl text-center">Reviews</div>
+        <div class="intro_text text-3xl text-center">
+          {{ $t("Reviews.title") }}
+        </div>
         <app-ruler name="information" />
-        <div class="m-5 teaser custom_teaser">What people say about us</div>
+        <div class="m-5 teaser custom_teaser">{{ $t("Reviews.subtitle") }}</div>
         <transition-group name="slide-fade">
           <app-review-slide-1 v-if="activeSlide === 'slide1'" />
           <app-review-slide-2 v-if="activeSlide === 'slide2'" />
