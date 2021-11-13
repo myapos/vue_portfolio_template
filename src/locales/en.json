@@ -50,6 +50,10 @@
       "title": "I am Iris"
     }
   },
+  "Works": {
+    "subtitle": "What we are proud of",
+    "title": "Works"
+  },
   "lorem_ipsum": "Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.",
   "our_skills": "Our Skills",
   "view_more": "View more"
