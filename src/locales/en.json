@@ -8,8 +8,23 @@
     "Team": "Team",
     "Works": "Works"
   },
+  "Slider": {
+    "Slide1": {
+      "subtitle": "Let's make the web beautiful together",
+      "title": "We have some awesome things"
+    },
+    "Slide2": {
+      "subtitle": "To the greatest journey",
+      "title": "Join with us"
+    },
+    "Slide3": {
+      "subtitle": "One responsive theme",
+      "title": "I am Iris"
+    }
+  },
   "about": {
     "subtitle": "little information",
     "title": "about"
-  }
+  },
+  "view_more": "View more"
 }

@@ -1,8 +1,8 @@
 <template>
   <div class="absolute text-center ml-auto mr-auto left-0 right-0">
     <!-- div> -->
-    <div class="intro_text text-4xl mb-10">We have some awesome things</div>
-    <div class="text-base mb-10">Let's make the web beautiful together</div>
+    <div class="intro_text text-4xl mb-10">{{ $t("Slider.Slide1.title") }}</div>
+    <div class="text-base mb-10">{{ $t("Slider.Slide1.subtitle") }}</div>
     <div
       class="
         ml-auto
@@ -18,7 +18,7 @@
       :class="{ light_view_more: activeTheme === 'light' }"
       @click="viewMore('viewmoreslide1')"
     >
-      View more
+      {{ $t("view_more") }}
     </div>
   </div>
 </template>
