@@ -19,7 +19,7 @@
           placeholder-white
           w-full
         "
-        placeholder="Your Name"
+        :placeholder="$t('Contacts.your_name')"
       />
       <ErrorMessage class="text-red-600" name="name" />
       <vee-field
@@ -34,7 +34,7 @@
           placeholder-white
           w-full
         "
-        placeholder="Enter Email"
+        :placeholder="$t('Contacts.email')"
       />
       <ErrorMessage class="text-red-600" name="email" />
       <vee-field
@@ -49,7 +49,7 @@
           placeholder-white
           w-full
         "
-        placeholder="Subject"
+        :placeholder="$t('Contacts.subject')"
       />
       <ErrorMessage class="text-red-600" name="subject" />
 
@@ -68,7 +68,7 @@
           placeholder-white
           w-full
         "
-        placeholder="Your message"
+        :placeholder="$t('Contacts.your_message')"
       />
       <ErrorMessage class="text-red-600" name="message" />
       <button
@@ -85,7 +85,7 @@
           w-full
         "
       >
-        Send
+        {{ $t("Contacts.send") }}
       </button>
     </vee-form>
   </div>

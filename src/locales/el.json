@@ -9,9 +9,14 @@
   },
   "Contacts": {
     "address": "H διευθυνση μας",
+    "email": "Καταχωρηστε το email σας",
+    "send": "Αποστολη",
+    "subject": "Θεμα",
     "subtitle": "Στοιχεια επαφης",
     "title": "Επικοινωνια",
-    "write": "Γραψτε μας"
+    "write": "Γραψτε μας",
+    "your_message": "Το μηνυμα σας",
+    "your_name": "Το ονομα σας"
   },
   "Download": {
     "download": "Μεταφορτωση",

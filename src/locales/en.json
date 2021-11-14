@@ -9,9 +9,14 @@
   },
   "Contacts": {
     "address": "Our Address",
+    "email": "Enter email",
+    "send": "Send",
+    "subject": "Subject",
     "subtitle": "All to contact us",
     "title": "CONTACTS",
-    "write": "Write to us"
+    "write": "Write to us",
+    "your_message": "Your message",
+    "your_name": "Your name"
   },
   "Download": {
     "download": "download",
