@@ -49,8 +49,16 @@
     "title": "OUR PARTNERS"
   },
   "Prices": {
+    "custom_domain": "Custom domain",
+    "disk": "disk",
+    "multi_use": "Multi Use",
+    "order_now": "Order now",
+    "personal_use": "Personal Use",
+    "projects": "projects",
     "subtitle": "That how much",
-    "title": "PRICES"
+    "support": "Support",
+    "title": "PRICES",
+    "unlimited": "Unlimited"
   },
   "Reviews": {
     "slide1": "\"This was my first experience with that team and outperformed my expectation! They know there stuff and I highly recommend them! A+++\".",

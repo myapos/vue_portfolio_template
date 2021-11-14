@@ -13,18 +13,25 @@
       v-if="shouldDisplay"
     >
       <app-price-card-header :product="product" />
-      <div class="text-center bg-white py-2 px-10">{{ product.usage }}</div>
+      <div class="text-center bg-white py-2 px-10">{{ $t(product.usage) }}</div>
       <div class="text-center bg-white py-2 px-10">
-        {{ product.num_of_projects }}
+        {{ $t(product.num_of_projects) }} {{ $t("Prices.projects") }}
       </div>
-      <div class="text-center bg-white py-2 px-10">{{ product.space }}</div>
-      <div class="text-center bg-white py-2 px-10">{{ product.domain }}</div>
+      <div class="text-center bg-white py-2 px-10">
+        {{ product.space }} {{ $t("Prices.disk") }}
+      </div>
+      <div class="text-center bg-white py-2 px-10">
+        {{ product.support }} {{ $t("Prices.support") }}
+      </div>
+      <div class="text-center bg-white py-2 px-10">
+        {{ $t("Prices.custom_domain") }}
+      </div>
       <div class="text-center py-5">
         <div
           class="bg-gray-800 order text-white w-3/6 m-0 mx-auto"
           @click="order(product)"
         >
-          Order Now!
+          {{ $t("Prices.order_now") }}
         </div>
       </div>
     </div>
