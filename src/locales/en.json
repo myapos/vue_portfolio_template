@@ -7,10 +7,33 @@
     "who_we_are": "Who We Are?",
     "why_we_do_it": "Why We Do it?"
   },
+  "Contacts": {
+    "address": "Our Address",
+    "email": "Enter email",
+    "send": "Send",
+    "subject": "Subject",
+    "subtitle": "All to contact us",
+    "title": "CONTACTS",
+    "write": "Write to us",
+    "your_message": "Your message",
+    "your_name": "Your name"
+  },
   "Download": {
     "download": "download",
     "download_our_pdf": "Download our pdf",
     "text": "Inspired by nature, follow technology, appreciate the classics. You can build modern & professional websites with Iris. The possibilities are just endless."
+  },
+  "FunFacts": {
+    "awards": "Winning Awards",
+    "clients": "Clients Worked With",
+    "coffees": "Cups of coffee drinking",
+    "projects": "Completed Projects",
+    "subtitle": "Before anyone is not told",
+    "title": "Some Fun Facts"
+  },
+  "Join": {
+    "subtitle": "Follow us on social networks",
+    "title": "JOIN US"
   },
   "Menu": {
     "about": "About",
@@ -20,6 +43,29 @@
     "services": "Services",
     "team": "Team",
     "works": "Works"
+  },
+  "Partners": {
+    "subtitle": "Those who trust us",
+    "title": "OUR PARTNERS"
+  },
+  "Prices": {
+    "custom_domain": "Custom domain",
+    "disk": "disk",
+    "multi_use": "Multi Use",
+    "order_now": "Order now",
+    "personal_use": "Personal Use",
+    "projects": "projects",
+    "subtitle": "That how much",
+    "support": "Support",
+    "title": "PRICES",
+    "unlimited": "Unlimited"
+  },
+  "Reviews": {
+    "slide1": "\"This was my first experience with that team and outperformed my expectation! They know there stuff and I highly recommend them! A+++\".",
+    "slide2": "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\"",
+    "slide3": "\"Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit\".",
+    "subtitle": "What people say about us",
+    "title": "Reviews"
   },
   "Services": {
     "app_development": "App Development",
@@ -42,6 +88,38 @@
       "subtitle": "One responsive theme",
       "title": "I am Iris"
     }
+  },
+  "Subscribe": {
+    "enter_email": "Enter email",
+    "submit": "Submit",
+    "title": "Subscribe"
+  },
+  "Team": {
+    "subtitle": "Meat our experts",
+    "title": "OUR TEAM"
+  },
+  "Tweets": {
+    "title": "Recent tweets"
+  },
+  "Useful": {
+    "links": {
+      "about": "About",
+      "advertise": "Advertise",
+      "copyright": "Copyright",
+      "legal": "Legal",
+      "press": "Press",
+      "services": "Services",
+      "title": "Useful links"
+    }
+  },
+  "Works": {
+    "all": "All",
+    "app_development": "App development",
+    "graphics_design": "Graphics design",
+    "responsive": "Responsive",
+    "subtitle": "What we are proud of",
+    "title": "Works",
+    "websites": "Websites"
   },
   "lorem_ipsum": "Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.",
   "our_skills": "Our Skills",

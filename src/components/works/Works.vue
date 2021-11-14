@@ -1,8 +1,10 @@
 <template>
   <div class="relative" id="works">
-    <div class="header font-bold text-3xl text-center m-5">Works</div>
+    <div class="header font-bold text-3xl text-center m-5">
+      {{ $t("Works.title") }}
+    </div>
     <app-ruler name="information" />
-    <div class="flex justify-center teaser">What we are proud of</div>
+    <div class="flex justify-center teaser">{{ $t("Works.subtitle") }}</div>
     <app-portfolio-tabs :tabs="tabs" @changedTab="changedTab($event)" />
     <app-portfolio :items="items" />
   </div>
@@ -36,7 +38,8 @@ export default {
   },
   computed: {
     items: function () {
-      if (this.activeTab === "All") {
+      console.log("this", this.activeTab);
+      if (this.activeTab === "Works.all") {
         const all = [];
         Object.keys(this.categories).forEach((key) => {
           all.push(...this.categories[key]);

@@ -18,7 +18,7 @@
               duration-500
               focus:outline-none focus:border-black
             "
-            placeholder="Enter Email"
+            :placeholder="$t('Subscribe.enter_email')"
           />
           <ErrorMessage class="text-red-600" name="email" />
         </div>
@@ -34,12 +34,11 @@
             hover:bg-gray-900
           "
         >
-          Submit
+          {{ $t("Subscribe.submit") }}
         </button>
       </div>
       <div class="flex flex-row flex-wrap mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        {{ $t("lorem_ipsum") }}
       </div>
     </vee-form>
   </div>

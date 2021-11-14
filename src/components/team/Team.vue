@@ -11,9 +11,11 @@
     id="team"
   >
     <div>
-      <div class="intro_text text-3xl text-center m-5">OUR TEAM</div>
+      <div class="intro_text text-3xl text-center m-5">
+        {{ $t("Team.title") }}
+      </div>
       <app-ruler name="information" />
-      <div class="m-5 text-center teaser">Meat our experts</div>
+      <div class="m-5 text-center teaser">{{ $t("Team.subtitle") }}</div>
     </div>
 
     <div

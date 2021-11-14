@@ -3,32 +3,32 @@ export const data = {
     {
       id: 1,
       target: "https://example.com",
-      description: "About",
+      description: "Useful.links.about",
     },
     {
       id: 2,
       target: "https://example.com",
-      description: "Services",
+      description: "Useful.links.services",
     },
     {
       id: 3,
       target: "https://example.com",
-      description: "Press",
+      description: "Useful.links.press",
     },
     {
       id: 4,
       target: "https://example.com",
-      description: "Copyright",
+      description: "Useful.links.copyright",
     },
     {
       id: 5,
       target: "https://example.com",
-      description: "Adevertise",
+      description: "Useful.links.advertise",
     },
     {
       id: 6,
       target: "https://example.com",
-      description: "Legal",
+      description: "Useful.links.legal",
     },
   ],
   tweets: [

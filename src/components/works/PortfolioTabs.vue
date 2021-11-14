@@ -16,7 +16,7 @@
         :class="{ activeTab: tab === activeTab }"
         @click="tabHandler(index)"
       >
-        {{ tab }}
+        {{ $t(tab) }}
       </li>
     </ul>
   </div>

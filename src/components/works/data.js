@@ -1,13 +1,13 @@
 export const tabs = [
-  "All",
-  "Websites",
-  "App development",
-  "Graphics design",
-  "Responsive",
+  "Works.all",
+  "Works.websites",
+  "Works.app_development",
+  "Works.graphics_design",
+  "Works.responsive",
 ];
 
 export const categories = {
-  Websites: [
+  "Works.websites": [
     {
       title: "Night Abstract",
       subtitle: "Night Abstract",
@@ -35,7 +35,7 @@ export const categories = {
       background_image: require("@/assets/works/p4.jpg"),
     },
   ],
-  "App development": [
+  "Works.app_development": [
     {
       title: "Skull awesome",
       subtitle: "Sub 1",
@@ -49,7 +49,7 @@ export const categories = {
       background_image: require("@/assets/works/p5.jpg"),
     },
   ],
-  "Graphics design": [
+  "Works.graphics_design": [
     {
       title: "Photo Frame",
       subtitle: "Sub 1",
@@ -69,7 +69,7 @@ export const categories = {
       background_image: require("@/assets/works/p8.jpg"),
     },
   ],
-  Responsive: [
+  "Works.responsive": [
     {
       title: "Hand Shots",
       subtitle: "Sub 1",
