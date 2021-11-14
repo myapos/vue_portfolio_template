@@ -1,8 +1,8 @@
 <template>
   <div class="prices relative p-16" id="prices">
-    <div class="intro_text text-3xl text-center">PRICES</div>
+    <div class="intro_text text-3xl text-center">{{ $t("Prices.title") }}</div>
     <app-ruler name="information" />
-    <div class="mb-24 text-center teaser">That how much</div>
+    <div class="mb-24 text-center teaser">{{ $t("Prices.subtitle") }}</div>
 
     <div class="flex flex-row justify-center flex-wrap">
       <app-price-card
