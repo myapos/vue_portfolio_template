@@ -1,8 +1,10 @@
 <template>
   <div class="partners relative bg-gray-50 dark:bg-gray-200 p-16">
-    <div class="intro_text text-3xl text-center">OUR PARTNERS</div>
+    <div class="intro_text text-3xl text-center">
+      {{ $t("Partners.title") }}
+    </div>
     <app-ruler name="information" />
-    <div class="m-5 text-center teaser">Those who trust us</div>
+    <div class="m-5 text-center teaser">{{ $t("Partners.subtitle") }}</div>
     <carousel
       :items-to-show="num_of_items"
       :autoplay="2000"
