@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <div class="text-2xl text-left my-2">Write to us</div>
+    <div class="text-2xl text-left my-2">{{ $t("Contacts.write") }}</div>
 
     <vee-form
       :validation-schema="schema"

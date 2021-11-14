@@ -3,15 +3,21 @@
     class="flex flex-row flex-wrap lg:justify-center lg:items-start bg-gray-900"
   >
     <div class="flex flex-col m-2 p-2 justify-between">
-      <div class="mb-5 text-2xl font-bold text-gray-100">Useful links</div>
+      <div class="mb-5 text-2xl font-bold text-gray-100">
+        {{ $t("Useful.links.title") }}
+      </div>
       <app-links-list :links="links" />
     </div>
     <div class="flex flex-col m-2 p-2 justify-between text-gray-100">
-      <div class="mb-5 text-2xl font-bold text-gray-100">Subscribe</div>
+      <div class="mb-5 text-2xl font-bold text-gray-100">
+        {{ $t("Subscribe.title") }}
+      </div>
       <app-subscribe :email="email" />
     </div>
     <div class="flex flex-col m-2 p-2 justify-between text-gray-100">
-      <div class="mb-5 text-2xl font-bold text-gray-100">Recent tweets</div>
+      <div class="mb-5 text-2xl font-bold text-gray-100">
+        {{ $t("Tweets.title") }}
+      </div>
       <app-tweets :tweets="tweets" />
     </div>
   </div>

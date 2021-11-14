@@ -26,10 +26,12 @@
     >
       <div class="relative">
         <div class="intro_text text-3xl text-center" id="sectionHeader">
-          Contacts
+          {{ $t("Contacts.title") }}
         </div>
         <app-ruler name="information" />
-        <div class="m-5 teaser custom_teaser">All to contact us</div>
+        <div class="m-5 teaser custom_teaser">
+          {{ $t("Contacts.subtitle") }}
+        </div>
         <div class="flex flex-row flex-wrap justify-evenly">
           <app-address-info :info="info" />
           <app-contact-form />

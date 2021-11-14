@@ -7,6 +7,12 @@
     "who_we_are": "Ποιοι ειμαστε?",
     "why_we_do_it": "Γιατι το κανουμε?"
   },
+  "Contacts": {
+    "address": "H διευθυνση μας",
+    "subtitle": "Στοιχεια επαφης",
+    "title": "Επικοινωνια",
+    "write": "Γραψτε μας"
+  },
   "Download": {
     "download": "Μεταφορτωση",
     "download_our_pdf": "Μεταφορτωστε το pdf μας",
@@ -70,9 +76,28 @@
       "title": "Ειμαι η Ιρις"
     }
   },
+  "Subscribe": {
+    "enter_email": "Καταχωρηστε το email σας",
+    "submit": "Υποβολη",
+    "title": "Εγγραφη"
+  },
   "Team": {
     "subtitle": "Συναντηθειτε με τους ειδικους μας",
     "title": "Η ομαδα μας"
+  },
+  "Tweets": {
+    "title": "Προσφατα tweets"
+  },
+  "Useful": {
+    "links": {
+      "about": "Σχετικα",
+      "advertise": "Διαφημιση",
+      "copyright": "Πνευματικη ιδιοκτησια",
+      "legal": "Νομικα",
+      "press": "Τυπος",
+      "services": "Υπηρεσιες",
+      "title": "Χρησιμοι συνδεσμοι"
+    }
   },
   "Works": {
     "all": "Ολα",

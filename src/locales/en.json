@@ -7,6 +7,12 @@
     "who_we_are": "Who We Are?",
     "why_we_do_it": "Why We Do it?"
   },
+  "Contacts": {
+    "address": "Our Address",
+    "subtitle": "All to contact us",
+    "title": "CONTACTS",
+    "write": "Write to us"
+  },
   "Download": {
     "download": "download",
     "download_our_pdf": "Download our pdf",
@@ -70,9 +76,28 @@
       "title": "I am Iris"
     }
   },
+  "Subscribe": {
+    "enter_email": "Enter email",
+    "submit": "Submit",
+    "title": "Subscribe"
+  },
   "Team": {
     "subtitle": "Meat our experts",
     "title": "OUR TEAM"
+  },
+  "Tweets": {
+    "title": "Recent tweets"
+  },
+  "Useful": {
+    "links": {
+      "about": "About",
+      "advertise": "Advertise",
+      "copyright": "Copyright",
+      "legal": "Legal",
+      "press": "Press",
+      "services": "Services",
+      "title": "Useful links"
+    }
   },
   "Works": {
     "all": "All",
