@@ -25,7 +25,7 @@
     >
       <div class="relative">
         <div class="intro_text text-3xl text-center" id="sectionHeader">
-          SOME FUN FACTS
+          {{ $t("FunFacts.title") }}
         </div>
         <transition-group
           name="custom-classes-transition"
@@ -41,29 +41,29 @@
             class="m-5 teaser custom_teaser"
             v-if="shouldDisplaySectionHeader"
           >
-            Before anyone is not told
+            {{ $t("FunFacts.subtitle") }}
           </div>
         </transition-group>
         <div class="flex flex-row justify-center">
           <app-fun-fact-card
             icon="users"
             number="3000"
-            description="Clients Worked With"
+            :description="$t('FunFacts.clients')"
           />
           <app-fun-fact-card
             icon="leaf"
             number="800"
-            description="Completed Projects"
+            :description="$t('FunFacts.projects')"
           />
           <app-fun-fact-card
             icon="trophy"
             number="55"
-            description="Winning Awards"
+            :description="$t('FunFacts.awards')"
           />
           <app-fun-fact-card
             icon="coffee"
             number="1100"
-            description="Cups of coffee drinking"
+            :description="$t('FunFacts.coffees')"
           />
         </div>
       </div>
