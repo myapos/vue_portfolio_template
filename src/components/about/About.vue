@@ -1,5 +1,5 @@
 <template>
-  <div class="cta" id="about">
+  <div class="cta bg-white dark:bg-gray-200" id="about">
     <div class="container m-auto">
       <section class="about p-5 text-center">
         <div class="header text-3xl">{{ $t("About.title") }}</div>

@@ -12,7 +12,7 @@
               py-1.5
               px-3
               my-2
-              text-gray-800
+              dark:text-gray-800
               border border-gray-300
               transition
               duration-500

@@ -10,8 +10,7 @@
         mb-5
         p-2
         view_more
-        dark:hover:bg-gray-900
-        hover:bg-gray-100
+        hover:bg-gray-900
         cursor-pointer
       "
       :class="{ light_view_more: activeTheme === 'light' }"
