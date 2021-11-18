@@ -1,5 +1,5 @@
 <template>
-  <div class="cta">
+  <div class="bg-white dark:bg-gray-400 cta">
     <div class="container m-auto">
       <section class="download p-5">
         <div class="header text-3xl">{{ $t("Download.download_our_pdf") }}</div>
@@ -9,7 +9,7 @@
             class="
               download_btn
               flex flex-wrap
-              p-5
+              p-2
               ml-8
               justify-center
               items-center
@@ -64,8 +64,8 @@ export default {
   background-color: #f8f8f8;
 }
 .download_btn {
-  height: 50px;
-  width: 150px;
+  height: auto;
+  width: auto;
 }
 
 .download_btn:hover {

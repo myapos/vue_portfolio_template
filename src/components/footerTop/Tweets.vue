@@ -2,7 +2,7 @@
   <div class="flex flex-col flex-wrap justify-center items-center">
     <div v-for="tweet in tweets" :key="tweet.id" class="m-2">
       <div>
-        <span class="text-sm text-gray-600 mr-2">@{{ tweet.by }}</span>
+        <span class="text-sm dark:text-gray-600 mr-2">@{{ tweet.by }}</span>
         <span>{{ tweet.text }}</span>
       </div>
 

@@ -1,13 +1,7 @@
 <template>
   <div>
-    <div
-      v-if="activeTheme === 'dark'"
-      class="relative z-0 slide_background slide_background_black"
-    ></div>
-    <div
-      v-if="activeTheme === 'light'"
-      class="relative z-0 slide_background slide_background_white"
-    ></div>
+    <div class="relative z-0 slide_background slide_background_black"></div>
+
     <div
       class="
         details
@@ -16,7 +10,7 @@
         mr-auto
         left-0
         right-0
-        dark:text-gray-50
+        text-gray-50
         z-0
         absolute
       "

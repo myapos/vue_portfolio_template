@@ -1,6 +1,6 @@
 <template>
-  <div class="cta" id="services">
-    <div class="header font-bold text-3xl text-center m-5">
+  <div class="bg-white dark:bg-gray-200 cta" id="services">
+    <div class="header font-bold text-3xl text-center p-5">
       {{ $t("Services.title") }}
     </div>
     <app-ruler name="information" />

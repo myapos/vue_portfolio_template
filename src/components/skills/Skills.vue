@@ -1,5 +1,5 @@
 <template>
-  <div class="cta">
+  <div class="bg-white dark:bg-gray-200 cta">
     <div class="container m-auto">
       <section class="skills p-5 text-center flex flex-wrap">
         <div class="header text-2xl font-bold">{{ $t("our_skills") }}</div>
