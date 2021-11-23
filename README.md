@@ -4,7 +4,7 @@ This project is powered with [Vue JS](https://vuejs.org/).
 
 ## Description
 
-This project will provide a theme/template for building a bilingual Single Page Application (SPA). The theme uses the Vuex store in order to keep any data that the App needs to diplay. Also it uses [Tailwind](https://tailwindcss.com/) behind the scenes in order to toggle between light and dark theme.
+This project will provide a theme/template for building a bilingual Single Page Application (SPA). Currently the supported languages are Greek and English. For static data manipulation, the theme uses the [Vuex](https://vuex.vuejs.org/) store. Finally, behind the scenes it uses [Tailwind](https://tailwindcss.com/) in order to take advantage of it's powerful features.
 
 ## Demo
 
@@ -14,14 +14,20 @@ You can see a demo [here](https://agitated-meitner-9b178d.netlify.app/)
 
 You can clone this repo and use it as a starting point for your own SPA. Feel free to modify it according to your needs.
 
-## Available Scripts
+## Installation steps
 
-In the project directory, you can run:
+You can run this project from Vue UI or from CLI. After cloning the project to your local system please follow the steps below
 
-### `yarn start`
+### `npm install`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:8585](http://localhost:8585) to view it in the browser.
+Install any required package
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### `npm run serve`
+
+Runs the project. 
+
+You can open `http://localhost:8080`
+
+### `npm run build`
+
+It will bundle your project in the public folder. You can upload the public folder to a server of your choice (for example Apache)
