@@ -38,5 +38,5 @@ It will bundle your project in the public folder. You can upload the public fold
 
 ### `vue ui`
 
-It will start the Vue UI. Next you will have to import the project in the Vue UI dashboard. Following that you can run the tasks `serve` and `build` similar to CLI method. For more information please visit [Vue UI] (https://cli.vuejs.org/dev-guide/ui-info.html#logo)
+It will start the Vue UI. Next you will have to import the project in the Vue UI dashboard. Following that you can run the tasks `serve` and `build` similar to CLI method. For more information please visit [Vue UI](https://cli.vuejs.org/dev-guide/ui-info.html#logo)
 
