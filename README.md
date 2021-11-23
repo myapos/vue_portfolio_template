@@ -18,6 +18,8 @@ You can clone this repo and use it as a starting point for your own SPA. Feel fr
 
 You can run this project from Vue UI or from CLI. After cloning the project to your local system please follow the steps below
 
+## CLI
+
 ### `npm install`
 
 Install any required package
@@ -31,3 +33,10 @@ You can open `http://localhost:8080`
 ### `npm run build`
 
 It will bundle your project in the public folder. You can upload the public folder to a server of your choice (for example Apache)
+
+## Vue UI
+
+### `vue ui`
+
+It will start the Vue UI. Next you will have to import the project in the Vue UI dashboard. Following that you can run the tasks `serve` and `build` similar to CLI method. For more information please visit [Vue UI] (https://cli.vuejs.org/dev-guide/ui-info.html#logo)
+
