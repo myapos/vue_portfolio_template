@@ -1,3 +1,7 @@
+:root {
+  --min-width: 320px;
+}
+
 .teaser {
   color: #525252;
 }

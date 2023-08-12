@@ -34,5 +34,6 @@ export default {
 <style>
 html {
   scroll-behavior: smooth;
+  min-width: var(--min-width);
 }
 </style>
