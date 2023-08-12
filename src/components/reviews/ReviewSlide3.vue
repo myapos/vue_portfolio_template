@@ -7,7 +7,7 @@
       </div>
     </blockquote>
     <footer class="text-base mb-2">
-      <cite title="John Doe">John Doe</cite>
+      <cite title="John Doe">Peter Phillips</cite>
     </footer>
   </div>
 </template>
