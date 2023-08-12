@@ -22,6 +22,7 @@ const store = createStore({
       { target: "contact", description: "Menu.contact" },
     ],
     footerLinks: [],
+    activeSlide: "Slide1",
   },
   mutations: {
     toggleTheme(state) {
@@ -89,6 +90,9 @@ const store = createStore({
         state.activeLanguage = state.supportedLanguages[0];
       }
     },
+    setActiveSlide(state, activeSlide) {
+      state.activeSlide = activeSlide;
+    },
   },
   actions: {
     toggleTheme({ commit }) {
@@ -99,6 +103,9 @@ const store = createStore({
     },
     toggleLanguage({ commit }) {
       commit(ACTION_TYPES.TOGGLE_LANGUAGE);
+    },
+    setActiveSlide({ commit }, activeSlide) {
+      commit(ACTION_TYPES.SET_ACTIVE_SLIDE, activeSlide);
     },
   },
   getters: {
@@ -116,6 +123,9 @@ const store = createStore({
     },
     getActiveLanguage: (state) => () => {
       return state.activeLanguage;
+    },
+    getActiveSlide: (state) => () => {
+      return state.activeSlide;
     },
   },
   modules: {},

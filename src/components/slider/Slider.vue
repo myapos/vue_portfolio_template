@@ -5,38 +5,34 @@
     <div
       class="
         details
-        text-center
+        text-center text-gray-50
         ml-auto
         mr-auto
-        left-0
-        right-0
-        text-gray-50
+        w-auto
         z-0
         absolute
       "
     >
-      <div class="relative">
+      <div class="flex justify-center items-center">
         <transition-group name="slide-fade">
-          <app-slide-1 v-if="activeSlide === 'slide1'" />
-          <app-slide-2 v-if="activeSlide === 'slide2'" />
-          <app-slide-3 v-if="activeSlide === 'slide3'" />
+          <app-slide :key="activeSlide" :activeSlide="activeSlide" />
         </transition-group>
       </div>
-      <div class="flex cursor-pointer justify-center controls">
+      <div class="flex cursor-pointer justify-center">
         <mdicon
           class="ml-2"
-          :name="activeSlide === 'slide1' ? 'Rhombus' : 'RhombusOutline'"
-          @click="changeActiveSlide('slide1')"
+          :name="activeSlide === 'Slide1' ? 'Rhombus' : 'RhombusOutline'"
+          @click="changeActiveSlide('Slide1')"
         />
         <mdicon
           class="ml-2"
-          :name="activeSlide === 'slide2' ? 'Rhombus' : 'RhombusOutline'"
-          @click="changeActiveSlide('slide2')"
+          :name="activeSlide === 'Slide2' ? 'Rhombus' : 'RhombusOutline'"
+          @click="changeActiveSlide('Slide2')"
         />
         <mdicon
           class="ml-2"
-          :name="activeSlide === 'slide3' ? 'Rhombus' : 'RhombusOutline'"
-          @click="changeActiveSlide('slide3')"
+          :name="activeSlide === 'Slide3' ? 'Rhombus' : 'RhombusOutline'"
+          @click="changeActiveSlide('Slide3')"
         />
       </div>
     </div>
@@ -44,31 +40,29 @@
 </template>
 
 <script>
+import AppSlide from "./Slide.vue";
+import { ACTION_TYPES } from "@/store/actionTypes";
+
 import "vue3-carousel/dist/carousel.css";
-import AppSlide1 from "./Slide1.vue";
-import AppSlide2 from "./Slide2.vue";
-import AppSlide3 from "./Slide3.vue";
 export default {
   name: "Slider",
   components: {
-    AppSlide1,
-    AppSlide2,
-    AppSlide3,
+    AppSlide,
   },
-  data() {
-    return {
-      activeSlide: "slide1",
-    };
-  },
+  data() {},
   computed: {
     activeTheme: function () {
       const activeTheme = this.$store.getters.getActiveTheme();
       return activeTheme;
     },
+    activeSlide: function () {
+      const activeSlide = this.$store.getters.getActiveSlide();
+      return activeSlide;
+    },
   },
   methods: {
     changeActiveSlide(slide) {
-      this.activeSlide = slide;
+      this.$store.dispatch(ACTION_TYPES.SET_ACTIVE_SLIDE, slide);
     },
   },
 };
@@ -88,16 +82,15 @@ img {
   top: 30%;
   left: 0;
   right: 0;
+  min-width: var(--min-width);
 }
 
-.controls {
-  margin-top: 17rem;
-}
 .slide-fade-enter-active {
   transition: all 0.3s ease;
 }
 .slide-fade-leave-active {
   transition: all 1.5s cubic-bezier(1, 0.5, 0.8, 1);
+  position: absolute;
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
